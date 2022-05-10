@@ -1,0 +1,11 @@
+{
+  "name": "landing-page",
+  "version": "0.0.1",
+  "description": "html-css-js",
+  "main": "index.js",
+  "author": "ilyakaverin",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
