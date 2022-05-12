@@ -2,10 +2,11 @@
     padding: 1rem;
     margin: 0 auto;
     display: grid;
-    grid-gap: 0.9%;
+    grid-gap: 0.67rem;
     grid-template-columns: 25% 25% 25% 25%;
     justify-content: center;
     max-width: 1200px;
+    animation: fadeInUp 2s ease 4s backwards;
     
 }
 .box {
@@ -36,7 +37,7 @@
     background-size: 300% 300%;
     background-position: 0 50%;
     border-radius: calc(2 * var(--border-width));
-     /* animation: moveGradient 4s alternate infinite; */
+    animation: moveGradient 4s alternate infinite;
   }
   .a {
     grid-column: 1 ;

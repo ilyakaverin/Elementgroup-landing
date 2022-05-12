@@ -20,33 +20,40 @@
     border: 1px solid red
 } */
 .heading-container .heading-picture-container {
-   /* animation: fade-heading 3s ease-in 2.5s  backwards; */
+   animation: fade-heading 3s ease-in 2.5s  backwards; 
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
 
 }
+.heading-container .heading-picture-container picture {
+    flex-basis: 50%;
+
+}
 .heading-container .logo {
-    width: 20%;
+    max-width: 40%;
 }
 .heading-container .heading-contact-container {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    align-items: middle;
+    gap: 0.2rem;
+}
+.heading-container .heading-contact-container a {
+    margin-right: 2rem;
 }
 .heading-container .heading-contact-container img {
     width: 20px;
 
 }
 .heading-container .heading-contact-container a {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.5px;
     font-size: 1rem;
 }
 
 .heading-container h1 {
   letter-spacing: 0.1rem;
   font-size: 7rem;
-  /* animation: fade-heading 3s ease-in 2.5s  backwards; */
+  animation: fade-heading 3s ease-in 2.5s  backwards;
   margin-top: 0.5rem;
   align-self: center;
 }
@@ -72,14 +79,27 @@ button:hover {
         max-width: revert;
         margin: 1rem;
     }
+    .heading-container .heading-contact-container {
+        align-items: center;
+    }
+    .heading-container .heading-contact-container img {
+        width:15px;
+    }
+    .heading-container .heading-contact-container a {
+        font-size: 0.5rem;
+    }
+    .heading-container .heading-contact-container a {
+        margin-right: 1rem;
+    }
     .heading-container h1 {
         font-size: 2rem;
     }
 
     .heading-container .logo {
-        width: 50%;
+        max-width: 70%;
     }
     .heading-container button {
         font-size: 1rem;
+        padding: 0.5rem
     }
 }
