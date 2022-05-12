@@ -13,14 +13,8 @@
                             100% 0,
                             100% 100%,
                             0 100%;
-    animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
-    animation-play-state: running;
 }
-/* .heading-container * {
-    border: 1px solid red
-} */
 .heading-container .heading-picture-container {
-   animation: fade-heading 3s ease-in 2.5s  backwards; 
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -53,7 +47,6 @@
 .heading-container h1 {
   letter-spacing: 0.1rem;
   font-size: 7rem;
-  animation: fade-heading 3s ease-in 2.5s  backwards;
   margin-top: 0.5rem;
   align-self: center;
 }
@@ -65,7 +58,6 @@ button {
     margin: 0 auto;
     font-size: 2rem;
     transition: ease 1s;
-    animation: fadeInUp 2s ease 4s backwards;
    
    
 }

@@ -1,0 +1,16 @@
+.animation-0 {
+    animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation-play-state: running;
+}
+.animation-1 {
+    animation: fade-heading 1s ease-in 3.3s  backwards; 
+}
+.animation-2 {
+    animation: fade-heading 1.3s ease-in 1.9s  backwards;
+}
+.animation-3 {
+    animation: fadeInUp 1.5s ease 3.2s backwards;
+}
+.animation-4 {
+    animation: fadeInUp 1.5s ease 3.5s backwards;
+}

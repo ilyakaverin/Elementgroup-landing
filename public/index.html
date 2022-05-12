@@ -13,13 +13,13 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="../src/css/style.css">
-    <script src="../src/main.js" defer></script>
+    <script src="../src/main.js" defer type="module"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <section class="heading-container">
-            <div class="heading-picture-container">
+        <section class="heading-container animated animation-0 ">
+            <div class="heading-picture-container animated animation-1">
                 <picture>
                     <source media="(prefers-color-scheme: dark)" srcset="../src/assets/logo_on_dark_background_RGB.png">
                     <source media="(prefers-color-scheme: light)" srcset="../src/assets/logo_on_light_background_RGB.png">
@@ -40,12 +40,11 @@
                     <a href="mailto:element@mail.ru">element@mail.ru</a>
                 </div>
             </div>
-
-            <h1>Ремонт под ключ</h1>
-            <button>Заказать звонок</button>
+            <h1 class="animated animation-2">Ремонт под ключ</h1>
+            <button class="animated animation-3">Заказать звонок</button>
         </section>
     </header>
-    <main>
+    <main class="animated animation-4">
         <section class="main-content-benefits">
             <div class="box a">
                 <h3>Проектирование</h3>
@@ -95,6 +94,18 @@
                 </span>
             </div>
 
+        </section>
+        <section class="main-content-gallery-container">
+            <h2>Наши работы</h2>
+            <div class="main-content-gallery">
+                <div class="photo a">1</div>
+                <div class="photo b">2</div>
+                <div class="photo c">3</div>
+                <div class="photo d">4</div>
+                <div class="photo e">5</div>
+                <div class="photo f">6</div>
+                <div class="photo g">7</div>
+            </div>
         </section>
     </main>
     
