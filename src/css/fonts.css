@@ -6,3 +6,8 @@
     font-family: "Fira sans bold";
     src: url("../../public/fonts/FiraSansCondensed-Bold.ttf");
 }
+@font-face {
+    font-family: "Fira sans light";
+    src: url("../../public/fonts/FiraSansCondensed-Light.ttf");
+
+}

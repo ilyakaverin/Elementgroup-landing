@@ -7,13 +7,12 @@
 @import "./main.css";
 
 :root {
-    --color-day: hsla(0, 0%, 7%, 1);
-    --color-night: hsla(0, 0%, 100%, 1);
+    --color-day:   hsla(0, 3%, 6%, 1);
+    --color-night: hsla(0, 0%, 87%, 1);
+    --color-bg-day: hsla(0, 0%, 100%, 1);
     font-family: "Fira sans";
 }
 body {
-    
     font-size: 18px;
-    
 }
 
