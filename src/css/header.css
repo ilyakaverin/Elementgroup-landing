@@ -1,9 +1,9 @@
 .heading-container {
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 1rem;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background-repeat: no-repeat;
     background-size:    100% 3px,
                         3px 100%,
@@ -13,24 +13,42 @@
                             100% 0,
                             100% 100%,
                             0 100%;
-    animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1,
-                fade-heading 2.2s ;
+    animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
     animation-play-state: running;
 }
-.heading-container picture {
-    text-align: center;
-    display: block;
+/* .heading-container * {
+    border: 1px solid red
+} */
+.heading-container .heading-picture-container {
+   /* animation: fade-heading 3s ease-in 2.5s  backwards; */
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 
 }
-.heading-container img {
-    width: 50%;
+.heading-container .logo {
+    width: 20%;
+}
+.heading-container .heading-contact-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.heading-container .heading-contact-container img {
+    width: 20px;
+
+}
+.heading-container .heading-contact-container a {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
 }
 
 .heading-container h1 {
   letter-spacing: 0.1rem;
   font-size: 7rem;
-  animation: fade-heading 3s ease-in;
-  text-align: center;
+  /* animation: fade-heading 3s ease-in 2.5s  backwards; */
+  margin-top: 0.5rem;
+  align-self: center;
 }
 
 button {
@@ -40,6 +58,7 @@ button {
     margin: 0 auto;
     font-size: 2rem;
     transition: ease 1s;
+    animation: fadeInUp 2s ease 4s backwards;
    
    
 }
@@ -49,12 +68,16 @@ button:hover {
 }
 
 @media(max-width: 768px) {
+    .heading-container {
+        max-width: revert;
+        margin: 1rem;
+    }
     .heading-container h1 {
         font-size: 2rem;
     }
 
-    .heading-container img {
-        width: 40%;
+    .heading-container .logo {
+        width: 50%;
     }
     .heading-container button {
         font-size: 1rem;

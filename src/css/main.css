@@ -1,16 +1,17 @@
-
 .main-content-benefits {
     padding: 1rem;
+    margin: 0 auto;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 0.9%;
+    grid-template-columns: 25% 25% 25% 25%;
     justify-content: center;
+    max-width: 1200px;
     
 }
 .box {
-    --border-width: 5px;
+    --border-width: 2px;
     border-radius: var(--border-width);
-    padding: 20px;
+    padding: 1rem;
     position: relative;
   }
 .box::after {
@@ -70,6 +71,7 @@
   @media(max-width: 768px) {
     .main-content-benefits {
         grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
     }
      .box span {
         display: none;

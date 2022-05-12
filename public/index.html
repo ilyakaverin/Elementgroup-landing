@@ -19,11 +19,23 @@
 <body>
     <header>
         <section class="heading-container">
-            <picture>
-                <source media="(prefers-color-scheme: dark)" srcset="../src/assets/logo_on_dark_background_RGB.png">
-                <source media="(prefers-color-scheme: light)" srcset="../src/assets/logo_on_light_background_RGB.png">
-                <img src="../src/assets/logo_on_light_background_RGB.png" alt="Element group">
-            </picture>
+            <div class="heading-picture-container">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="../src/assets/logo_on_dark_background_RGB.png">
+                    <source media="(prefers-color-scheme: light)" srcset="../src/assets/logo_on_light_background_RGB.png">
+                    <img src="../src/assets/logo_on_light_background_RGB.png" alt="Element group" class="logo">
+                </picture>
+                <div class="heading-contact-container">
+                    <picture>
+                     <source media="(prefers-color-scheme: dark)" srcset="../src/assets/phone-white.svg">
+                     <source media="(prefers-color-scheme: light)" srcset="../src/assets/phone-black.svg">
+                     <img src="../src/assets/phone-white.svg" alt="Phone:">
+                </picture>
+                    <a href="tel:88002000600">88002000600</a>
+                </div>
+
+            </div>
+
             <h1>Ремонт под ключ</h1>
             <button>Заказать звонок</button>
         </section>

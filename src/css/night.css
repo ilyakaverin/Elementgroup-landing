@@ -20,6 +20,12 @@
                     rgba(255, 255, 255, 0.05) 25px 25px;
 
     }
+    .heading-container .heading-contact-container svg {
+        fill: var(--color-night);
+    }
+    .heading-container .heading-contact-container a {
+        color: var(--color-night)
+    }
     .box {
         color: var(--color-day);
         background-color: var(--color-night);
