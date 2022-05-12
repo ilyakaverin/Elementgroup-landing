@@ -1,0 +1,28 @@
+@media (prefers-color-scheme: light) {
+    body {
+        color: var(--color-day);
+        background-color: var(--color-night);
+    }
+    .heading-container {
+        background-image:   linear-gradient(to right, var(--color-day) 100%, var(--color-day) 100%),
+                            linear-gradient(to bottom, var(--color-day) 100%, var(--color-day) 100%),
+                            linear-gradient(to right, var(--color-day) 100%, var(--color-day) 100%),
+                            linear-gradient(to bottom, var(--color-day) 100%, var(--color-day) 100%);
+    }
+    .heading-container button {
+        border: 2px solid  var(--color-day);
+        color:  var(--color-day)
+    }
+    .heading-container button:hover {
+        box-shadow: rgba(0, 0, 0, 0.4) 5px 5px,
+                    rgba(0, 0, 0, 0.3) 10px 10px,
+                    rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px,
+                    rgba(0, 0, 0, 0.05) 25px 25px;
+
+    }
+    .box {
+        color: var(--color-night);
+        background-color: var(--color-day);
+    }
+  }
+  

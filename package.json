@@ -2,10 +2,19 @@
   "name": "landing-page",
   "version": "0.0.1",
   "description": "html-css-js",
-  "main": "index.js",
   "author": "ilyakaverin",
   "license": "MIT",
+  "source": "public/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
   "devDependencies": {
+    "@parcel/packager-raw-url": "2.5.0",
+    "@parcel/transformer-webmanifest": "2.5.0",
     "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

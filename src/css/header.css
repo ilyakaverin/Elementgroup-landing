@@ -1,0 +1,62 @@
+.heading-container {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size:    100% 3px,
+                        3px 100%,
+                        100% 3px,
+                        3px 100%;
+    background-position:    0 0,
+                            100% 0,
+                            100% 100%,
+                            0 100%;
+    animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1,
+                fade-heading 2.2s ;
+    animation-play-state: running;
+}
+.heading-container picture {
+    text-align: center;
+    display: block;
+
+}
+.heading-container img {
+    width: 50%;
+}
+
+.heading-container h1 {
+  letter-spacing: 0.1rem;
+  font-size: 7rem;
+  animation: fade-heading 3s ease-in;
+  text-align: center;
+}
+
+button {
+    background: transparent;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 2rem;
+    transition: ease 1s;
+   
+   
+}
+button:hover {
+    transition: ease 1s;
+    transform: translate(-12px, -12px);
+}
+
+@media(max-width: 768px) {
+    .heading-container h1 {
+        font-size: 2rem;
+    }
+
+    .heading-container img {
+        width: 40%;
+    }
+    .heading-container button {
+        font-size: 1rem;
+    }
+}

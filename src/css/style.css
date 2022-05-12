@@ -1,0 +1,18 @@
+@import "./fonts.css";
+@import "./keyframes.css";
+@import "./day.css";
+@import "./night.css";
+@import "./header.css";
+@import "./main.css";
+
+:root {
+    --color-day: hsla(0, 0%, 7%, 1);
+    --color-night: hsla(0, 0%, 100%, 1);
+}
+
+body {
+    font-family: "Fira sans";
+    font-size: 18px;
+    
+}
+
