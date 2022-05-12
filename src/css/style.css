@@ -5,6 +5,7 @@
 @import "./night.css";
 @import "./header.css";
 @import "./main.css";
+@import "./benefits.css";
 
 :root {
     --color-day:   hsla(0, 3%, 6%, 1);
