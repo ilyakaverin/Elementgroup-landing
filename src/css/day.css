@@ -4,22 +4,21 @@
         background-color: var(--color-bg-day);
     }
     .heading-container {
-        border-left: 4px solid var(--color-day);
-        border-bottom: 4px solid var(--color-day);
-        border-right: 4px solid var(--color-day);
+        border: 4px solid var(--color-day);
+
+    }
+    .heading-contact-container {
+        border: 4px solid var(--color-day);
     }
     .heading-container button {
         border: 2px solid  var(--color-day);
         color:  var(--color-day)
+    } 
+    .heading-container form input {
+        border: 2px solid  var(--color-day);
+        color:  var(--color-day)
     }
-    .heading-container button:hover {
-        box-shadow: rgba(0, 0, 0, 0.4) 5px 5px,
-                    rgba(0, 0, 0, 0.3) 10px 10px,
-                    rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px,
-                    rgba(0, 0, 0, 0.05) 25px 25px;
-
-    }
-    .heading-container .heading-contact-container a {
+    .heading-contact-container a {
         color: var(--color-day)
     }
     .box {

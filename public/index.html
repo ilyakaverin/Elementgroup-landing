@@ -18,34 +18,41 @@
 </head>
 <body>
     <header>
-        <section class="heading-container animated animation-0 ">
-            <div class="heading-picture-container animated animation-1">
-                <picture>
-                    <source media="(prefers-color-scheme: dark)" srcset="../src/assets/logo_on_dark_background_RGB.png">
-                    <source media="(prefers-color-scheme: light)" srcset="../src/assets/logo_on_light_background_RGB.png">
-                    <img src="../src/assets/logo_on_light_background_RGB.png" alt="Element group" class="logo">
-                </picture>
-                <div class="heading-contact-container">
-                    <div class="heading-contact">
-                        <picture>
-                         <source media="(prefers-color-scheme: dark)" srcset="../src/assets/phone-white.svg">
-                         <source media="(prefers-color-scheme: light)" srcset="../src/assets/phone-black.svg">
-                         <img src="../src/assets/phone-white.svg" alt="Phone:">
-                        </picture>
-                        <a href="tel:88002000600">88002000600</a>
-                    </div>
-                    <div class="heading-contact">
-                        <picture>
-                            <source media="(prefers-color-scheme: dark)" srcset="../src/assets/mail-white.svg">
-                            <source media="(prefers-color-scheme: light)" srcset="../src/assets/mail-black.svg">
-                            <img src="../src/assets/mail-white.svg" alt="Email:">
-                       </picture>
-                        <a href="mailto:element@mail.ru">element@mail.ru</a>
-                    </div>
+        <section class="heading-contact-container animated animation-1">
+            <picture class="logo">
+                <source media="(prefers-color-scheme: dark)" srcset="../src/assets/logo_on_dark_background_RGB.png">
+                <source media="(prefers-color-scheme: light)" srcset="../src/assets/logo_on_light_background_RGB.png">
+                <img src="../src/assets/logo_on_light_background_RGB.png" alt="Element group" >
+            </picture>
+            <div class="header-contacts">
+                <div class="heading-contact">
+                    <picture>
+                     <source media="(prefers-color-scheme: dark)" srcset="../src/assets/phone-white.svg">
+                     <source media="(prefers-color-scheme: light)" srcset="../src/assets/phone-black.svg">
+                     <img src="../src/assets/phone-white.svg" alt="Phone:">
+                    </picture>
+                    <a href="tel:88002000600">88002000600</a>
                 </div>
+                <div class="heading-contact">
+                    <picture>
+                        <source media="(prefers-color-scheme: dark)" srcset="../src/assets/mail-white.svg">
+                        <source media="(prefers-color-scheme: light)" srcset="../src/assets/mail-black.svg">
+                        <img src="../src/assets/mail-white.svg" alt="Email:">
+                   </picture>
+                    <a href="mailto:element@mail.ru">element@mail.ru</a>
+                </div> 
+
             </div>
+ 
+        </section>
+        <section class="heading-container animated animation-0 ">
             <h1 class="animated animation-2">Ремонт под ключ</h1>
-            <button class="animated animation-3">Заказать звонок</button>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
+            <form>
+                <input type="tel" name="phone" id="phoneInput" placeholder="Введите телефон">
+                <button type="submit" class="animated animation-3">Получить Консультацию</button>
+            </form>
+
         </section>
     </header>
     <main class="animated animation-4">
@@ -92,17 +99,15 @@
             <div class="box g">
                 <h3>Дистанционный ремонт</h3>
                 <span>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Идеально подойдёт не только жителям других регионов, но и нашим заказчикам, у которых не так много свободного времени. Работая с нами, вы получаете ремонт, организованный настолько грамотно и отлажено, что сможете отслеживать весь процесс в режиме онлайн.
                 </span>
             </div>
 
         </section>
-        <section class="main-content-gallery-container">
+        <!-- <section class="main-content-gallery-container">
                 <h2>Наши работы</h2>
             <div class="main-content-gallery">
-                <div class="photo a">1</div>
+                <div class="photo a"></div>
                 <div class="photo b">2</div>
                 <div class="photo c">3</div>
                 <div class="photo d">4</div>
@@ -110,7 +115,8 @@
                 <div class="photo f">6</div>
                 <div class="photo g">7</div>
             </div>
-        </section>
+        </section> -->
+        
     </main>
     
 </body>

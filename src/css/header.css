@@ -1,68 +1,77 @@
+
 .heading-container {
     margin: 0 auto;
-    max-width: 1192px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
+    background: url('../assets/headerpic.jpeg') no-repeat;
+    background-size: 40%;
+    background-position: right;
 }
-.heading-container .heading-picture-container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 1rem;
+.heading-container span {
+    margin: 1rem;
+    max-width: 45%;
+}
+.logo {
+    margin: 1rem;
+}
+ .logo img {
+    max-width: 30%;
 
 }
-.heading-container .heading-picture-container picture {
-    flex-basis: 50%;
 
-}
-.heading-container .logo {
-    max-width: 40%;
-}
-.heading-container .heading-contact-container {
+ .heading-contact-container {
+    max-width: 1200px;
+    margin: 1rem auto;
     display: flex;
-    align-items: middle;
-    gap: 0.2rem;
-    flex-basis: 50%;
-    justify-content: flex-end;
+    border-radius: 15px;
+}
+.header-contacts {
+    display: flex;
 }
 .heading-contact {
     display: flex;
-    align-items: middle;
-    gap: 0.4rem;
+    align-items: center;
 }
-.heading-container .heading-contact:first-child{
-    margin-right: 1rem;
+.heading-contact-container .header-contacts img {
+     width: 25px;
 }
-.heading-container .heading-contact-container img {
-    width: 20px;
-
-}
-.heading-container .heading-contact-container a {
+.heading-contact-container a {
     letter-spacing: 0.5px;
     font-size: 1rem;
+    margin:0.5rem;
 }
 
 .heading-container h1 {
   letter-spacing: 0.1rem;
   font-size: 7rem;
-  margin-top: 0.5rem;
-  align-self: center;
+  margin: 0.67rem;
+  max-width: 40%;
+  line-height: 5.5rem;
+}
+.heading-container form {
+    margin: 1rem;
+    max-width: 50%;
+    display: flex;
+    gap: 0.5rem;
+  
+}
+.heading-container form input {
+    border-radius: 5px;
+    max-width: 100%;
+    font-size: 1rem;
+    flex-basis: 40%;
+    outline:0;
+    padding:1rem
 }
 
 button {
     background: transparent;
-    padding: 1rem;
     cursor: pointer;
-    margin: 1rem auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 5px;
-    transition: ease 1s;
-}
-button:hover {
-    transition: ease 0.5s;
-    transform: translate(-12px, -12px);
+    flex-basis: 50%;
 }
 
 @media(max-width: 768px) {
@@ -70,23 +79,31 @@ button:hover {
         max-width: revert;
         margin: 1rem;
     }
-    .heading-container .heading-contact-container {
+    .heading-contact-container {
         align-items: center;
+        margin: 1rem;
     }
-    .heading-container .heading-contact-container img {
-        width:15px;
+    .heading-container span {
+        display: none;
     }
-    .heading-container .heading-contact-container a {
+  
+    .heading-contact-container .logo img {
+        max-width: 100%;
+    }
+    .heading-contact-container a {
+        margin-right: 1rem;
         font-size: 0.5rem;
     }
-    .heading-container .heading-contact-container a {
-        margin-right: 1rem;
+    .heading-container form {
+        flex-direction: column;
     }
     .heading-container h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        line-height: 2rem;
+        margin: 1rem
     }
 
-    .heading-container .logo {
+    .heading-container .logo  {
         max-width: 70%;
     }
     .heading-container button {
