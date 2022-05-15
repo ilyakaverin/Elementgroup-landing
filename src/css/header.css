@@ -1,11 +1,8 @@
 
 .heading-container {
-    margin: 0 auto;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background: url('../assets/headerpic.jpeg') no-repeat;
     background-size: 40%;
     background-position: right;
 }
@@ -22,7 +19,6 @@
 }
 
  .heading-contact-container {
-    max-width: 1200px;
     margin: 1rem auto;
     display: flex;
     border-radius: 15px;
@@ -92,7 +88,10 @@ button {
     }
     .heading-contact-container a {
         margin-right: 1rem;
-        font-size: 0.5rem;
+
+    }
+    .header-contacts {
+        flex-direction: column;
     }
     .heading-container form {
         flex-direction: column;
