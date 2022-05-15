@@ -25,18 +25,23 @@
 }
 .header-contacts {
     display: flex;
+    align-items: center;
+}
+.header-contacts button {
+    display: none;
 }
 .heading-contact {
     display: flex;
-    align-items: center;
+    align-items: middle;
+    margin-right: 1rem;
 }
 .heading-contact-container .header-contacts img {
-     width: 25px;
+     width: 30px;
+     margin-right: 0.5rem;
 }
 .heading-contact-container a {
     letter-spacing: 0.5px;
-    font-size: 1rem;
-    margin:0.5rem;
+    font-size: 1.36rem;
 }
 
 .heading-container h1 {
@@ -61,22 +66,33 @@
     outline:0;
     padding:1rem
 }
-
-button {
+.heading-container form button {
     background: transparent;
     cursor: pointer;
     font-size: 1.5rem;
     border-radius: 5px;
     flex-basis: 50%;
 }
+.heading-contact-container button {
+    background: transparent;
+    border-radius: 10px;
+    flex-basis: 50%;
+}
+.heading-contact-container button:active {
+    transform: translateY(5px);
+}
+
 
 @media(max-width: 768px) {
     .heading-container {
         max-width: revert;
         margin: 1rem;
     }
+    .header-contacts button {
+        display: block;
+
+    }
     .heading-contact-container {
-        align-items: center;
         margin: 1rem;
     }
     .heading-container span {
@@ -86,12 +102,31 @@ button {
     .heading-contact-container .logo img {
         max-width: 100%;
     }
+    .heading-contact-container .logo {
+        flex-basis: 50%;
+    }
     .heading-contact-container a {
         margin-right: 1rem;
+        font-size: 0.9rem;
 
     }
     .header-contacts {
         flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        right: 20px;
+        top: 100px;
+        border: 1px solid red;
+        max-width: 150px;
+        transition: opacity 0.2s ease-out;
+        opacity: 0;
+    }
+    .header-contact {
+        
+    }
+    .header-contacts img {
+        width: 10px;
+
     }
     .heading-container form {
         flex-direction: column;
@@ -108,5 +143,10 @@ button {
     .heading-container button {
         font-size: 1rem;
         padding: 0.5rem
+    }
+}
+@media(min-width: 769px) {
+    .heading-contact-container button {
+        display: none;
     }
 }

@@ -19,3 +19,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+.inactive {
+    display: none;
+}
+.active {
+    display: flex;
+    opacity: 1;
+    animation: fadeInDown 0.3s ease;
+    
+}
