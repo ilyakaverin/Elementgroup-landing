@@ -73,9 +73,7 @@
   }
   /* slider description */
 
-  .main-content-gallery-container ul li:before {
-    background: url("../assets/checked-white.svg") no-repeat;
-  }
+
   /* accordeon */
   .tab-label {
     background-color: var(--color-night);

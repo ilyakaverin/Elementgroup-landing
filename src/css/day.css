@@ -58,9 +58,7 @@
 
   /* slider description */
 
-  .main-content-gallery-container ul li:before {
-    background: url("../assets/checked.svg") no-repeat;
-  }
+  
   /* accordeon */
 
   .tab {
