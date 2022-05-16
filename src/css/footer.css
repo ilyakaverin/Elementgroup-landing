@@ -1,6 +1,7 @@
 footer {
   background-color: var(--color-day);
-  height: 200px;
+  min-height: 50px;
+  padding: 1rem 0 1rem;
 }
 .footer-contacts {
   display: flex;
@@ -8,11 +9,12 @@ footer {
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+  
 }
 .footer-contacts-social {
   width: 35px;
   height: 35px;
-  margin-top: 1rem;
+
 }
 @media (max-width: 768px) {
   .footer-contacts {

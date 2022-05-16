@@ -79,6 +79,20 @@
   .main-content-gallery-container ul li:before {
     background: url("../assets/checked.svg") no-repeat;
   }
+  /* accordeon */
+
+  .tab {
+      color: var(--color-day)
+  }
+  .tab-label {
+      background-color: var(--color-day);
+      color: var(--color-night);
+  }
+  .tab-content {
+    color: var(--color-day);
+    background: var(--color-bg-day);
+  }
+ 
 
   /* footer */
 

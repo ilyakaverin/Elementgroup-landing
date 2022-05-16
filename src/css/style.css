@@ -7,6 +7,7 @@
 @import "./main.css";
 @import "./benefits.css";
 @import "./carousel.css";
+@import "./accordeon.css";
 @import "./footer.css";
 
 :root {
@@ -26,4 +27,7 @@ body {
   display: flex;
   opacity: 1;
   animation: fadeInDown 0.3s ease;
+}
+h2 {
+    font-size: 3rem;
 }

@@ -14,10 +14,7 @@
   box-sizing: border-box;
 }
 .main-content-gallery-container h2 {
-  text-align: center;
   grid-column: 1 / 3;
-
-  font-size: 3rem;
 }
 .main-content-gallery-container h3 {
   text-align: center;

@@ -1,85 +1,82 @@
 @media (prefers-color-scheme: dark) {
-  body {
-    color: var(--color-night);
-    background-color: var(--color-day);
-  }
-  .heading-container {
-    border: 4px solid var(--color-night);
-    background: url("../assets/headerpic-removebg.png") no-repeat;
-  }
-  .header-contacts {
-    background-color: var(--color-day);
-  }
-  .heading-contact-container {
-    border: 4px solid var(--color-night);
-  }
-  .heading-container button {
-    border: 2px solid var(--color-night);
-    color: var(--color-night);
-  }
-  .heading-container form input {
-    border: 2px solid var(--color-night);
-    color: var(--color-night);
-  }
-  .heading-container .heading-contact-container svg {
-    fill: var(--color-night);
-  }
-  .heading-contact-container a {
-    color: var(--color-night);
-  }
-  .box {
-    color: var(--color-day);
-    background-color: var(--color-night);
-    border-radius: var(--border-width);
-  }
-  .box::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-    height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-      60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-      hsl(89, 85%, 66%),
-      hsl(134, 85%, 66%),
-      hsl(179, 85%, 66%)
-    );
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 4s alternate infinite;
-  }
+       body {
+        color: var(--color-night);
+        background-color: var(--color-day);
+    }
+    .heading-container {
+        border: 4px solid var(--color-night);
+        background: url('../assets/headerpic-removebg.png') no-repeat;
 
-  /* slider */
-  .slider-container {
-    border: 4px solid var(--color-night);
-  }
+    }
 
-  .slider-prev-next-control label {
-    background-color: var(--color-day);
-  }
-  #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after,
-  #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after,
-  #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after,
-  #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after,
-  #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after,
-  #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after,
-  #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after,
-  #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after,
-  #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after,
-  #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after {
-    color: var(--color-night);
-  }
-  /* slider description */
+    .heading-contact-container {
+        border: 4px solid var(--color-night);
 
-  .main-content-gallery-container ul li:before {
-    background: url("../assets/checked-white.svg") no-repeat;
+    }
+    .heading-container button {
+        border: 2px solid var(--color-night);
+        color:  var(--color-night)
+    }
+    .heading-container form input {
+        border: 2px solid var(--color-night);
+        color:  var(--color-night)
+    }
+    .heading-container .heading-contact-container svg {
+        fill: var(--color-night);
+    }
+    .heading-contact-container a {
+        color: var(--color-night)
+    }
+    .box {
+        color: var(--color-day);
+        background-color: var(--color-night);
+        border-radius: var(--border-width);
+    }
+    .box::after {
+        position: absolute;
+        content: "";
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        z-index: -1;
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background: linear-gradient(
+          60deg,
+          hsl(224, 85%, 66%),
+          hsl(269, 85%, 66%),
+          hsl(314, 85%, 66%),
+          hsl(359, 85%, 66%),
+          hsl(44, 85%, 66%),
+          hsl(89, 85%, 66%),
+          hsl(134, 85%, 66%),
+          hsl(179, 85%, 66%)
+        );
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: calc(2 * var(--border-width));
+        animation: moveGradient 4s alternate infinite;
+      }
+
+
+      /* slider */ 
+      .slider-container {
+          border: 4px solid var(--color-night);
+      }
+
+    .slider-prev-next-control label {
+        background-color: var(--color-day);
+    }
+    #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after {
+        color: var(--color-night)
+    }
+     /* slider description */
+
+     .main-content-gallery-container ul li:before {
+        background: url('../assets/checked-white.svg') no-repeat;
+    }
+    /* accordeon */
+    .tab-label {
+        background-color: var(--color-night);
+        color: var(--color-day)
+    }
   }
-}
