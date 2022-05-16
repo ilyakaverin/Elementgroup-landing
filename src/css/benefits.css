@@ -1,3 +1,6 @@
+main {
+    scroll-behavior: smooth;
+}
 .main-content-benefits-header {
   text-align: center;
 }
