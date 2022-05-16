@@ -1,11 +1,10 @@
 export default () => {
+  const contacts = document.querySelector(".header-contacts");
+  const showContactsButton = document.querySelector(
+    ".heading-contact-container button"
+  );
 
-    const contacts = document.querySelector('.header-contacts');
-    const showContactsButton = document.querySelector('.heading-contact-container button');
-
-
-      showContactsButton.addEventListener('click', () => {
-          contacts.classList.toggle('active')
-      })
-
-}
+  showContactsButton.addEventListener("click", () => {
+    contacts.classList.toggle("active");
+  });
+};

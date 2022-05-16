@@ -12,7 +12,8 @@
   "devDependencies": {
     "@parcel/packager-raw-url": "2.5.0",
     "@parcel/transformer-webmanifest": "2.5.0",
-    "parcel": "^2.5.0"
+    "parcel": "^2.5.0",
+    "prettier": "^2.6.2"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

@@ -7,24 +7,23 @@
 @import "./main.css";
 @import "./benefits.css";
 @import "./carousel.css";
+@import "./footer.css";
 
 :root {
-    --color-day:   hsla(0, 3%, 6%, 1);
-    --color-night: hsla(0, 0%, 87%, 1);
-    --color-bg-day: hsla(0, 0%, 100%, 1);
-    font-family: "Fira sans";
+  --color-day: hsla(228, 6%, 16%, 1);
+  --color-night: hsla(0, 0%, 87%, 1);
+  --color-bg-day: hsla(0, 0%, 100%, 1);
+  font-family: "Fira sans";
 }
 body {
-    font-size: 18px;
-    max-width: 1200px;
-    margin: 0 auto;
+  font-size: 18px;
+  margin: 0 auto;
 }
 .inactive {
-    display: none;
+  display: none;
 }
 .active {
-    display: flex;
-    opacity: 1;
-    animation: fadeInDown 0.3s ease;
-    
+  display: flex;
+  opacity: 1;
+  animation: fadeInDown 0.3s ease;
 }

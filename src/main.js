@@ -1,6 +1,5 @@
-import app from './scripts/app.js';
-import animate from './scripts/animations';
+import app from "./scripts/app.js";
+import animate from "./scripts/animations";
 
-
-app()
-animate()
+app();
+animate();

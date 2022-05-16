@@ -1,13 +1,12 @@
 @font-face {
-    font-family: "Fira sans";
-    src: url("../../public/fonts/FiraSansCondensed-Regular.ttf");
+  font-family: "Fira sans";
+  src: url("../../public/fonts/FiraSansCondensed-Regular.ttf");
 }
 @font-face {
-    font-family: "Fira sans bold";
-    src: url("../../public/fonts/FiraSansCondensed-Bold.ttf");
+  font-family: "Fira sans bold";
+  src: url("../../public/fonts/FiraSansCondensed-Bold.ttf");
 }
 @font-face {
-    font-family: "Fira sans light";
-    src: url("../../public/fonts/FiraSansCondensed-Light.ttf");
-
+  font-family: "Fira sans light";
+  src: url("../../public/fonts/FiraSansCondensed-Light.ttf");
 }

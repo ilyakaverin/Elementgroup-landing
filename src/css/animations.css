@@ -1,16 +1,16 @@
 .animation-0 {
-    animation: fade-heading 1s ease-out;
-    animation-play-state: running;
+  animation: fade-heading 1s ease-out;
+  animation-play-state: running;
 }
 .animation-1 {
-    animation: fade-heading 1s ease-in 0.5s  backwards; 
+  animation: fade-heading 1s ease-in 0.5s backwards;
 }
 .animation-2 {
-    animation: fade-heading 1.3s ease-in 1s  backwards;
+  animation: fade-heading 1.3s ease-in 1s backwards;
 }
 .animation-3 {
-    animation: fadeInUp 1.5s ease 1.5s backwards;
+  animation: fadeInUp 1.5s ease 1.5s backwards;
 }
 .animation-4 {
-    animation: fadeInUp 1.5s ease 2s backwards;
+  animation: fadeInUp 1.5s ease 2s backwards;
 }

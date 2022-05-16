@@ -1,0 +1,25 @@
+footer {
+  background-color: var(--color-day);
+  height: 200px;
+}
+.footer-contacts {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-contacts-social {
+  width: 35px;
+  height: 35px;
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .footer-contacts {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-contacts span {
+    text-align: center;
+  }
+}

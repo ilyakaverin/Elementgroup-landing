@@ -1,48 +1,46 @@
 @keyframes fade-heading {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 @keyframes moveGradient {
-    50% {
-      background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translate3d(0, 100%, 0);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
 
-   
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translate3d(0, -100%, 0);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
   }
-  @keyframes fadeOutUp {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      transform: translate3d(0, -100%, 0);
-    }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
