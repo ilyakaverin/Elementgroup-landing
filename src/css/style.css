@@ -13,6 +13,7 @@
 :root {
   --color-day: hsla(228, 6%, 16%, 1);
   --color-night: hsla(0, 0%, 87%, 1);
+  --color-day-transparent: hsla(228, 6%, 16%, 0.7);
   --color-bg-day: hsla(0, 0%, 100%, 1);
   font-family: "Fira sans";
 }
@@ -29,5 +30,5 @@ body {
   animation: fadeInDown 0.3s ease;
 }
 h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }

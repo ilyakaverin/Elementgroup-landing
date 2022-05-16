@@ -1,3 +1,27 @@
+header {
+  background: url("../assets/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  animation: bounce 3.5s ease infinite;
+}
+.arrow-down span {
+  font-size: 0.8rem;
+}
+.arrow-down img {
+  width: 50px;
+}
 .heading-container {
   display: flex;
   flex-direction: column;
@@ -6,11 +30,10 @@
   background-position: right;
   max-width: 1192px;
   margin: 0 auto;
-  margin-bottom: 1rem;
 }
-.heading-container span {
+.heading-container p {
   margin: 1rem;
-  max-width: 45%;
+  margin-top: 1.5rem;
 }
 .logo {
   margin: 1rem;
@@ -19,12 +42,16 @@
   max-width: 25%;
 }
 
-.heading-contact-container {
-  margin: 1rem auto;
+.heading-contact-inner-container {
+  margin: 0 auto;
+  margin-bottom: 1rem;
   display: flex;
   border-radius: 15px;
   align-items: center;
   max-width: 1192px;
+}
+.heading-contact-container {
+  margin-bottom: 3rem;
 }
 .header-contacts {
   display: flex;
@@ -48,16 +75,20 @@
   font-size: 1.36rem;
 }
 
-.heading-container h1 {
+.heading-container-inner {
+  max-width: 70%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.heading-container .heading-container-inner h1 {
   letter-spacing: 0.1rem;
   font-size: 7rem;
-  margin: 0.67rem;
-  max-width: 40%;
-  line-height: 5.5rem;
+  margin: 1.5rem;
+  line-height: 5.7rem;
 }
 .heading-container form {
   margin: 1rem;
-  max-width: 50%;
   display: flex;
   gap: 0.5rem;
 }
@@ -95,10 +126,15 @@
     display: block;
   }
   .heading-contact-container {
+  }
+  .heading-contact-inner-container {
     margin: 1rem;
   }
   .heading-container span {
     display: none;
+  }
+  .heading-container-inner {
+    max-width: 100%;
   }
 
   .heading-contact-container .logo img {
@@ -130,7 +166,7 @@
   .heading-container form {
     flex-direction: column;
   }
-  .heading-container h1 {
+  .heading-container .heading-container-inner h1 {
     font-size: 2.5rem;
     line-height: 2rem;
     margin: 1rem;

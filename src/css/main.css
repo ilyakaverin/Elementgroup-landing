@@ -1,7 +1,4 @@
 .main-content-gallery-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 1rem;

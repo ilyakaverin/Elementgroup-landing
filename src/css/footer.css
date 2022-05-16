@@ -9,12 +9,10 @@ footer {
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  
 }
 .footer-contacts-social {
   width: 35px;
   height: 35px;
-
 }
 @media (max-width: 768px) {
   .footer-contacts {

@@ -41,87 +41,101 @@
   <body>
     <header>
       <section class="heading-contact-container animated animation-0">
-        <picture class="logo">
-          <source
-            media="(prefers-color-scheme: dark)"
-            srcset="../src/assets/logo_on_dark_background_RGB.png"
-          />
-          <source
-            media="(prefers-color-scheme: light)"
-            srcset="../src/assets/logo_on_light_background_RGB.png"
-          />
-          <img
-            src="../src/assets/logo_on_light_background_RGB.png"
-            alt="Element group"
-          />
-        </picture>
-        <button>Контакты</button>
-        <div class="header-contacts">
-          <div class="heading-contact">
-            <picture>
-              <source
-                media="(prefers-color-scheme: dark)"
-                srcset="../src/assets/phone-white.svg"
-              />
-              <source
-                media="(prefers-color-scheme: light)"
-                srcset="../src/assets/phone-black.svg"
-              />
-              <img src="../src/assets/phone-white.svg" alt="Phone:" />
-            </picture>
-            <a href="tel:88002000600">88002000600</a>
-          </div>
-          <div class="heading-contact">
-            <picture>
-              <source
-                media="(prefers-color-scheme: dark)"
-                srcset="../src/assets/mail-white.svg"
-              />
-              <source
-                media="(prefers-color-scheme: light)"
-                srcset="../src/assets/mail-black.svg"
-              />
-              <img src="../src/assets/mail-white.svg" alt="Email:" />
-            </picture>
-            <a href="mailto:element@mail.ru">element@mail.ru</a>
+        <div class="heading-contact-inner-container">
+          <picture class="logo">
+            <source
+              media="(prefers-color-scheme: dark)"
+              srcset="../src/assets/logo_on_dark_background_RGB.png"
+            />
+            <source
+              media="(prefers-color-scheme: light)"
+              srcset="../src/assets/logo_on_light_background_RGB.png"
+            />
+            <img
+              src="../src/assets/logo_on_light_background_RGB.png"
+              alt="Element group"
+            />
+          </picture>
+          <button>Контакты</button>
+          <div class="header-contacts">
+            <div class="heading-contact">
+              <picture>
+                <source
+                  media="(prefers-color-scheme: dark)"
+                  srcset="../src/assets/phone-white.svg"
+                />
+                <source
+                  media="(prefers-color-scheme: light)"
+                  srcset="../src/assets/phone-black.svg"
+                />
+                <img src="../src/assets/phone-white.svg" alt="Phone:" />
+              </picture>
+              <a href="tel:88002000600">88002000600</a>
+            </div>
+            <div class="heading-contact">
+              <picture>
+                <source
+                  media="(prefers-color-scheme: dark)"
+                  srcset="../src/assets/mail-white.svg"
+                />
+                <source
+                  media="(prefers-color-scheme: light)"
+                  srcset="../src/assets/mail-black.svg"
+                />
+                <img src="../src/assets/mail-white.svg" alt="Email:" />
+              </picture>
+              <a href="mailto:element@mail.ru">element@mail.ru</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="heading-container animated animation-1">
-        <h1 class="animated animation-2">Ремонт под ключ</h1>
-        <span class="animated animation-3"
-          >Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </span>
-        <form>
-          <input
-            type="tel"
-            name="phone"
-            id="phoneInput"
-            placeholder="Введите телефон"
-          />
-          <button type="submit" class="animated animation-4">
-            Получить Консультацию
-          </button>
-        </form>
+        <div class="heading-container-inner">
+          <h1 class="animated animation-2">Дистанционный ремонт квартир</h1>
+          <p class="animated animation-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <form>
+            <input
+              type="tel"
+              name="phone"
+              id="phoneInput"
+              placeholder="Введите телефон"
+            />
+            <button type="submit" class="animated animation-4">
+              Получить Консультацию
+            </button>
+          </form>
+        </div>
       </section>
+      <a href="#benefits" class="arrow-down"
+        ><span>Подробнее</span><img src="../src/assets/arrow-down.svg" alt=""
+      /></a>
     </header>
     <main class="animated animation-5">
+      <h2 class="main-content-benefits-header" id="benefits">
+        Наши преимущества
+      </h2>
       <section class="main-content-benefits">
         <div class="box a">
-          <h3>Проектирование</h3>
+          <h3>Преимущество один</h3>
           <span>
-            Вы будете точно знать, какой интерьер получите: перед ремонтом мы подготовим дизайн-проект с мебелью, светом и декором.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
           </span>
         </div>
         <div class="box b">
-          <h3>Дизайн</h3>
-          <span>Воплощаем в жизнь потрясающие интерьеры</span>
+          <h3>Преимущество два</h3>
+          <span
+            >Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.</span
+          >
         </div>
         <div class="box c">
-          <h3>Юридическое сопровождение</h3>
+          <h3>Преимущество три</h3>
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -130,7 +144,7 @@
           </span>
         </div>
         <div class="box d">
-          <h3>Приемка ремонта квартиры</h3>
+          <h3>Преимущество четыре</h3>
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -139,14 +153,14 @@
           </span>
         </div>
         <div class="box e">
-          <h3>Составление сметы</h3>
+          <h3>Преимущество пять</h3>
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </span>
         </div>
         <div class="box f">
-          <h3>Замеры объекта</h3>
+          <h3>Преимущество шесть</h3>
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -154,7 +168,7 @@
           </span>
         </div>
         <div class="box g">
-          <h3>Дистанционный ремонт</h3>
+          <h3>Преимущество 7</h3>
           <span>
             Идеально подойдёт не только жителям других регионов, но и нашим
             заказчикам, у которых не так много свободного времени. Работая с
@@ -179,35 +193,35 @@
                 <div class="info top-left">
                   <h3>Название Работы</h3>
                 </div>
-                <img src="../src/assets/gallery3.jpg" />
+                <img src="../src/assets/bg.jpg" />
               </article>
 
               <article>
                 <div class="info bottom-right">
                   <h3>Название работы</h3>
                 </div>
-                <img src="../src/assets/gallery3.jpg" />
+                <img src="../src/assets/bg.jpg" />
               </article>
 
               <article>
                 <div class="info bottom-left">
                   <h3>Название работы</h3>
                 </div>
-                <img src="../src/assets/gallery3.jpg" />
+                <img src="../src/assets/bg.jpg" />
               </article>
 
               <article>
                 <div class="info top-right">
                   <h3>Название работы</h3>
                 </div>
-                <img src="../src/assets/gallery3.jpg" />
+                <img src="../src/assets/bg.jpg" />
               </article>
 
               <article>
                 <div class="info bottom-left">
                   <h3>Название работы</h3>
                 </div>
-                <img src="../src/assets/gallery3.jpg" />
+                <img src="../src/assets/bg.jpg" />
               </article>
             </div>
             <!-- .inner -->
@@ -232,77 +246,58 @@
           </div>
           <!-- .slider-dot-control -->
         </div>
-        <div class="main-content-gallery-description">
-          <h3>Абсолютно любой спектр услуг</h3>
-          <ul>
-            <li>Штукатурные работы</li>
-            <li>Плиточные работы</li>
-            <li>Малярные работы</li>
-            <li>Стяжка пола</li>
-            <li>Электромонтажные работы</li>
-            <li>Сантехнические работы</li>
-            <li>Демонтаж</li>
-            <li>Монтаж окон и дверей</li>
-            <li>Монтаж натяжных потолков</li>
-            <li>Монтаж бытовой техники</li>
-            <li>Установка кухни и кухонной техники</li>
-            <li>Звукоизоляция стен</li>
-            <li>Установка счетчиков</li>
-            <li>Монтаж радиаторов</li>
-            <li>Доставка материалов на объект</li>
-            <li>Уборка после ремонта</li>
-            <li>Вывоз строительного мусора</li>
-            <li>Монтаж ниш, изменение проемов, обустройство балкона</li>
-          </ul>
-        </div>
       </section>
       <section class="main-faq-container">
-          <h2>Часто задаваемые вопросы</h2>
+        <h2>Часто задаваемые вопросы</h2>
         <div class="row">
-            <div class="col">
-              <div class="tabs">
-                <div class="tab">
-                  <input type="checkbox" id="chck1">
-                  <label class="tab-label" for="chck1">Вопрос 1</label>
-                  <div class="tab-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
-                  </div>
+          <div class="col">
+            <div class="tabs">
+              <div class="tab">
+                <input type="checkbox" id="chck1" />
+                <label class="tab-label" for="chck1">Вопрос 1</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
                 </div>
-                <div class="tab">
-                  <input type="checkbox" id="chck2">
-                  <label class="tab-label" for="chck2">Вопрос 2</label>
-                  <div class="tab-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
-                  </div>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="chck2" />
+                <label class="tab-label" for="chck2">Вопрос 2</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  in!
                 </div>
-                <div class="tab">
-                    <input type="checkbox" id="chck3">
-                    <label class="tab-label" for="chck3">Вопрос 3</label>
-                    <div class="tab-content">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
-                    </div>
-                  </div>
-                  <div class="tab">
-                    <input type="checkbox" id="chck4">
-                    <label class="tab-label" for="chck4">Вопрос 4</label>
-                    <div class="tab-content">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
-                    </div>
-                  </div>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="chck3" />
+                <label class="tab-label" for="chck3">Вопрос 3</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </div>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="chck4" />
+                <label class="tab-label" for="chck4">Вопрос 4</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
     </main>
     <footer>
-        <section class="footer-contacts">
-          <a href="#" class="footer-contacts-social">
-            <img src="../src/assets/telegram.svg" alt="" />
-          </a>
-          <a href="tel:88002000600">88002000600</a>
-          <a href="mailto:element@mail.ru">element@mail.ru</a>
-          <span>г. Новороссийск, ул Красивых Молдавских Партизан д 11</span>
-        </section>
-      </footer>
+      <section class="footer-contacts">
+        <a href="#" class="footer-contacts-social">
+          <img src="../src/assets/telegram.svg" alt="" />
+        </a>
+        <a href="tel:88002000600">88002000600</a>
+        <a href="mailto:element@mail.ru">element@mail.ru</a>
+        <span>г. Новороссийск, ул Красивых Молдавских Партизан д 11</span>
+      </section>
+    </footer>
   </body>
 </html>
