@@ -76,16 +76,16 @@ header {
 }
 
 .heading-container-inner {
-  max-width: 70%;
+  max-width: 50%;
   border-radius: 15px;
   margin-bottom: 1rem;
 }
 
 .heading-container .heading-container-inner h1 {
   letter-spacing: 0.1rem;
-  font-size: 7rem;
+  font-size: 5rem;
   margin: 1.5rem;
-  line-height: 5.7rem;
+  line-height: 4.2rem;
 }
 .heading-container form {
   margin: 1rem;

@@ -86,7 +86,7 @@ article img {
   transition: all 1000ms ease-out 600ms;
 }
 .info h3 {
-  color: #fcfff4;
+  color: var(--color-day);
   margin: 0 0 5px;
   font-weight: normal;
   font-size: 1.5em;
@@ -153,6 +153,7 @@ article img {
   line-height: 38px;
   font-size: 3em;
   display: block;
+  cursor: pointer;
 }
 
 #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after,

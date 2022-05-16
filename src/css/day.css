@@ -30,9 +30,10 @@
     color: var(--color-day);
   }
   .box {
-    color: var(--color-night);
-    background-color: var(--color-day);
+    color: var(--color-day);
+    background-color: var(--color-night);
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 
   /* slider */
