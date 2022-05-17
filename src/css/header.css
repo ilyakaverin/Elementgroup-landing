@@ -2,7 +2,7 @@ header {
   background: url("../assets/bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - 5px);
   display: flex;
   flex-direction: column;
 }
@@ -34,6 +34,8 @@ header {
 .heading-container p {
   margin: 1rem;
   margin-top: 1.5rem;
+  max-width: 80%;
+  font-size: 1.2rem;
 }
 .logo {
   margin: 1rem;
@@ -44,14 +46,13 @@ header {
 
 .heading-contact-inner-container {
   margin: 0 auto;
-  margin-bottom: 1rem;
   display: flex;
   border-radius: 15px;
   align-items: center;
   max-width: 1192px;
 }
 .heading-contact-container {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .header-contacts {
   display: flex;
@@ -100,12 +101,15 @@ header {
   outline: 0;
   padding: 1rem;
 }
-.heading-container form button {
+.heading-container-inner form button {
   background: transparent;
   cursor: pointer;
   font-size: 1.5rem;
   border-radius: 5px;
   flex-basis: 50%;
+}
+.heading-container-inner button:hover {
+    opacity: 0.5;
 }
 .heading-contact-container button {
   background: transparent;
