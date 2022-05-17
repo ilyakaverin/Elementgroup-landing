@@ -110,56 +110,15 @@ export default () => {
             }
         }
     };
-
-    const autoSlide = () => {
-        let cards = conf.qSA('.card');
-        if(cards.length) {
-            for(let i = 0; i < cards.length; i++){
-                if(cards[i].classList.contains('active')){
-                    let dataCard = cards[i];
-                    getNextCard(dataCard);
-                    break;
-                }
-            }
-            function getNextCard(prevCard){
-    
-                for(let i = 0; i < cards.length; i++){
-                    let dataCard = parseInt(prevCard.getAttribute('data-card'), 10),
-                        nextCard = parseInt(cards[i].getAttribute('data-card'), 10);
-
-                    if((dataCard + 1) === nextCard){
-                        prevCard.classList.add('inactive');
-                        prevCard.classList.remove('active');
-                        conf.qS('.cards-wrapper').prepend(cards[i]);
-                        cards[i].classList.remove('inactive');
-                        cards[i].classList.add('active');
-                        break;
-                    }else if((dataCard + 1) >= cards.length){
-                        prevCard.classList.add('inactive');
-                        prevCard.classList.remove('active');
-                        conf.qS('.cards-wrapper').prepend(cards[i]);
-                        cards[0].classList.remove('inactive');
-                        cards[0].classList.add('active');
-                        break;
-                    }
-                }
-            }
-
-        }}
-
-
-
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () { // thanks to koby.dev
 
         'use strict';
         
         Cards.init();
         conf.InfoBox();
-        console.log(document.querySelector('.slide-button'))
-        setInterval(autoSlide, 2500)
+     
 
     });
        
 
-};
- // thanks to koby.dev
+}; 
