@@ -2,9 +2,10 @@ header {
   background: url("../assets/bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 5px);
+  min-height: calc(100vh - 5px);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .arrow-down {
   position: absolute;
@@ -14,7 +15,7 @@ header {
   flex-direction: column;
   text-decoration: none;
   align-items: center;
-  animation: bounce 3.5s ease infinite;
+  animation: pulse 3.5s ease infinite;
 }
 .arrow-down span {
   font-size: 0.8rem;
@@ -39,9 +40,11 @@ header {
 }
 .logo {
   margin: 1rem;
+  max-width: 50%;
+  
 }
 .logo img {
-  max-width: 25%;
+    max-width: 25%;
 }
 
 .heading-contact-inner-container {
@@ -50,43 +53,38 @@ header {
   border-radius: 15px;
   align-items: center;
   max-width: 1192px;
+  justify-content: space-between;
 }
 .heading-contact-container {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-.header-contacts {
+.heading-contacts {
   display: flex;
   align-items: center;
-  z-index: 9999;
 }
-.header-contacts button {
-  display: none;
-}
-.heading-contact {
-  display: flex;
-  align-items: middle;
-  margin-right: 1rem;
-}
-.heading-contact-container .header-contacts img {
-  width: 30px;
-  margin-right: 0.5rem;
-}
-.heading-contact-container a {
+
+.heading-contacts a {
   letter-spacing: 0.5px;
   font-size: 1.36rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  display: flex;
+}
+.heading-contacts a:hover {
+    text-decoration: underline;
 }
 
 .heading-container-inner {
-  max-width: 50%;
+  max-width: 60%;
   border-radius: 15px;
   margin-bottom: 1rem;
 }
 
 .heading-container .heading-container-inner h1 {
-  letter-spacing: 0.1rem;
-  font-size: 5rem;
-  margin: 1.5rem;
-  line-height: 4.2rem;
+  font-size: 5.5rem;
+  margin: 1rem;
+  line-height: 5rem;
+  max-width: 60%;
 }
 .heading-container form {
   margin: 1rem;
@@ -95,7 +93,6 @@ header {
 }
 .heading-container form input {
   border-radius: 5px;
-  max-width: 100%;
   font-size: 1rem;
   flex-basis: 40%;
   outline: 0;
@@ -129,10 +126,9 @@ header {
   .header-contacts button {
     display: block;
   }
-  .heading-contact-container {
-  }
   .heading-contact-inner-container {
     margin: 1rem;
+    margin-bottom: 0;
   }
   .heading-container span {
     display: none;
@@ -142,14 +138,14 @@ header {
   }
 
   .heading-contact-container .logo img {
-    max-width: 85%;
+    max-width: 80%;
   }
   .heading-contact-container .logo {
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
   .heading-contact-container a {
     margin-right: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.5rem;
   }
   .header-contacts {
     flex-direction: column;
@@ -184,8 +180,13 @@ header {
     padding: 0.5rem;
   }
 }
-@media (min-width: 769px) {
-  .heading-contact-container button {
-    display: none;
+@media (min-width: 769px) and (max-width: 1279px) {
+ 
+  .heading-container-inner {
+    max-width: 100%;
+    margin: 1rem
   }
+}
+@media (min-width: 1280px) {
+
 }
