@@ -36,10 +36,12 @@
   padding: 1em;
   font-weight: bold;
   cursor: pointer;
+  color: var(--color-night);
   /* Icon */
 }
 .tab-label:hover {
-  background: #1a252f;
+  background: var(--color-night);
+  color: var(--color-day);
 }
 .tab-label::after {
   content: "❯";
@@ -52,18 +54,21 @@
   max-height: 0;
   padding: 0 1em;
   transition: all 0.35s;
+  background-color: var(--color-night);
 }
 .tab-close {
   display: flex;
   justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
-  background: #2c3e50;
+  background: var(--color-day);
+  color: var(--color-night);
   cursor: pointer;
 }
 
 .tabs input:checked + .tab-label {
   background: #1a252f;
+  color: var(--color-night);
 }
 .tabs input:checked + .tab-label::after {
   transform: rotate(90deg);

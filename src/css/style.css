@@ -1,8 +1,6 @@
 @import "./fonts.css";
 @import "./keyframes.css";
 @import "./animations.css";
-@import "./day.css";
-@import "./night.css";
 @import "./header.css";
 @import "./main.css";
 @import "./benefits.css";
@@ -15,6 +13,7 @@
   --color-night: hsla(0, 0%, 87%, 1);
   --color-day-transparent: hsla(228, 6%, 16%, 0.7);
   --color-bg-day: hsla(0, 0%, 100%, 1);
+  --color-night-transparent: hsla(0, 0%, 87%, 0.7);
   font-family: "Fira sans";
 }
 body {
@@ -34,4 +33,10 @@ body {
 }
 h2 {
   font-size: 3rem;
+  color: var(--color-night);
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
 }

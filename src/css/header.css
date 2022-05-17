@@ -15,7 +15,8 @@ header {
   flex-direction: column;
   text-decoration: none;
   align-items: center;
-  animation: pulse 3.5s ease infinite;
+  animation: pulse 1.5s ease infinite;
+  color: var(--color-night);
 }
 .arrow-down span {
   font-size: 0.8rem;
@@ -41,10 +42,9 @@ header {
 .logo {
   margin: 1rem;
   max-width: 30%;
-  
 }
 .logo img {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .heading-contact-inner-container {
@@ -57,6 +57,7 @@ header {
 }
 .heading-contact-container {
   margin-bottom: 1rem;
+  background-color: var(--color-night-transparent);
 }
 .heading-contacts {
   display: flex;
@@ -69,15 +70,17 @@ header {
   text-decoration: none;
   margin-right: 1rem;
   display: flex;
+  color: var(--color-day);
 }
 .heading-contacts a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .heading-container-inner {
   max-width: 60%;
   border-radius: 15px;
   margin-bottom: 1rem;
+  background-color: var(--color-night-transparent);
 }
 
 .heading-container .heading-container-inner h1 {
@@ -104,9 +107,10 @@ header {
   font-size: 1.5rem;
   border-radius: 5px;
   flex-basis: 50%;
+  border: 2px solid var(--color-day);
 }
 .heading-container-inner button:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .heading-contact-container button {
   background: transparent;
@@ -137,9 +141,7 @@ header {
     max-width: 100%;
   }
   .heading-contact-container .logo img {
-
     max-width: 100%;
-    
   }
   .heading-contact-container a {
     font-size: 0.74rem;
@@ -174,12 +176,10 @@ header {
   }
 }
 @media (min-width: 769px) and (max-width: 1279px) {
- 
   .heading-container-inner {
     max-width: 100%;
-    margin: 1rem
+    margin: 1rem;
   }
 }
 @media (min-width: 1280px) {
-
 }
