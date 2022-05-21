@@ -104,7 +104,7 @@ header {
 .heading-container-inner form button {
   background: transparent;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 5px;
   flex-basis: 50%;
   border: 2px solid var(--color-day);

@@ -2,11 +2,11 @@
 
 /*---- NUMBER OF SLIDE CONFIGURATION ----*/
 .slider-container {
-  max-width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
-  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
 }
 
 .slider-container input {
@@ -113,7 +113,7 @@ article img {
 .slider-wrapper {
   width: 100%;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 15px;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -229,6 +229,7 @@ article img {
 @media only screen and (max-width: 850px) and (min-width: 450px) {
   .slider-container {
     max-width: 100%;
+    margin: 1rem;
   }
   .wrapper {
     margin: 1rem;
@@ -236,22 +237,17 @@ article img {
   .slider-wrapper article img {
     height: 350px;
   }
-  .slider-wrapper {
-    border-radius: 0;
-  }
+ 
 }
 /*---- MOBILE----*/
 @media only screen and (max-width: 450px) {
   .slider-container {
     max-width: 100%;
+    margin: 1rem;
   }
 
   .slider-wrapper article img {
     height: 350px;
-  }
-
-  .slider-wrapper {
-    border-radius: 0;
   }
 
   .slider-wrapper .info {
