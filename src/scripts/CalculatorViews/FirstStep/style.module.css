@@ -1,0 +1,7 @@
+.h2 {
+    color:red
+}
+.firstStep__Form{
+     display: flex;
+     flex-direction: column;
+ }

@@ -7,6 +7,7 @@
 @import "./carousel.css";
 @import "./accordeon.css";
 @import "./footer.css";
+@import "./calculator.css";
 
 :root {
   --color-day: hsla(228, 6%, 16%, 1);
