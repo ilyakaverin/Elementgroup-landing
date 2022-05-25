@@ -1,41 +1,36 @@
 main {
   background-color: var(--color-day);
 }
-.main-content-gallery-container {
-  background-color: #fff;
+
+.main-ourTeam-container {
+  background-color: var(--color-night);
+  padding-bottom: 2rem;
+}
+.main-ourTeam-container-inner {
+  max-width: 1200px;
+  border: 1px solid transparent;
+  margin: 0 auto;
+}
+.main-ourTeam-cards {
   display: flex;
-  flex-direction: column;
 }
-
-.main-content-gallery-container ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-}
-.main-content-gallery-container ul li {
-  list-style: none;
+.main-ourTeam-container-inner .main-ourTeam-card {
+  display: flex;
   position: relative;
-  vertical-align: center;
-  width: fit-content;
+  flex-direction: column;
+  flex-basis: 33%;
 }
-.main-content-gallery-container ul li:before {
-  content: " ";
-  width: 25px;
-  height: 25px;
+.main-ourTeam-container-inner .main-ourTeam-card img {
+  border-radius: 15px;
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+.main-ourTeam-container-inner .main-ourTeam-card span {
   position: absolute;
-  left: -2rem;
-  top: -0.2rem;
-}
-
-@media (max-width: 768px) {
-  .main-content-gallery-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-content-gallery-container ul {
-    grid-template-columns: auto;
-  }
-  .main-content-gallery-container h2 {
-    font-size: 2rem;
-  }
+  background: var(--color-night);
+  padding: 0.5rem;
+  border-radius: 10px;
+  bottom: 2%;
+  left: 1%;
 }

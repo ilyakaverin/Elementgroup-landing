@@ -1,4 +1,4 @@
-import style from './style.module.css';
+import style from "./style.module.css";
 
 const Button = ({ name, click, isDisabled, action }) => {
   function handleClick() {
@@ -6,7 +6,11 @@ const Button = ({ name, click, isDisabled, action }) => {
   }
 
   return (
-    <button className={style.button} onClick={() => handleClick()} disabled={isDisabled}>
+    <button
+      className={style.button}
+      onClick={() => handleClick()}
+      disabled={isDisabled}
+    >
       {name}
     </button>
   );

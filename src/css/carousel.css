@@ -1,3 +1,41 @@
+.main-content-gallery-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-gallery-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+.main-content-gallery-container ul li {
+  list-style: none;
+  position: relative;
+  vertical-align: center;
+  width: fit-content;
+}
+.main-content-gallery-container ul li:before {
+  content: " ";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -2rem;
+  top: -0.2rem;
+}
+
+@media (max-width: 768px) {
+  .main-content-gallery-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content-gallery-container ul {
+    grid-template-columns: auto;
+  }
+  .main-content-gallery-container h2 {
+    font-size: 2rem;
+  }
+}
 /*---- NUMBER OF SLIDE CONFIGURATION ----*/
 .slider-container {
   max-width: 1200px;

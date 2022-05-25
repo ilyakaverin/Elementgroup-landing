@@ -1,0 +1,49 @@
+@media (max-width: 468px) {
+  .main-ourTeam-container-inner {
+    margin: 1rem;
+  }
+  .main-ourTeam-container-inner .main-ourTeam-card {
+    display: flex;
+    height: 280px;
+    flex-basis: 50%;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+
+  .main-ourTeam-container-inner .main-ourTeam-card:not(:first-child) {
+    margin-left: -50px;
+  }
+
+  .main-ourTeam-container-inner .main-ourTeam-card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+
+  .main-ourTeam-container-inner .main-ourTeam-card:hover ~ .main-ourTeam-card {
+    position: relative;
+    left: 55px;
+    transition: 0.4s ease-out;
+  }
+
+  .main-ourTeam-container-inner .main-ourTeam-card img {
+    max-width: 100%;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fadeoff {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+    }
+  }
+}
