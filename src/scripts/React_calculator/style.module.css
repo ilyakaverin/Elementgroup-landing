@@ -1,0 +1,26 @@
+.stepContainer {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.calculator_inner_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.buttonsContainer {
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row-reverse;
+}
+.calculator_inner_container h2 {
+  align-self: center;
+  margin: 1rem;
+}
+.calculator_inner_container p {
+  align-self: center;
+}

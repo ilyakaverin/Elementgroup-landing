@@ -1,0 +1,23 @@
+.finalStep__Container {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+}
+.finalStep__Container form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 1rem;
+}
+
+.finalStep__Data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-basis: 50%;
+}
+@media (max-width: 768px) {
+  .finalStep__Container {
+    flex-direction: column-reverse;
+  }
+}

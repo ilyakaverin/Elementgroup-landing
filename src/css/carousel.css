@@ -1,5 +1,3 @@
-
-
 /*---- NUMBER OF SLIDE CONFIGURATION ----*/
 .slider-container {
   max-width: 1200px;
@@ -237,7 +235,6 @@ article img {
   .slider-wrapper article img {
     height: 350px;
   }
- 
 }
 /*---- MOBILE----*/
 @media only screen and (max-width: 450px) {

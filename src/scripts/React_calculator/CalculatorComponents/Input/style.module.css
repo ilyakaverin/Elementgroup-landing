@@ -1,0 +1,10 @@
+.input[type="radio"] {
+  margin-right: 0.2rem;
+}
+.input[type="number"],
+.input[type="tel"] {
+  padding: 1rem;
+  border-radius: 5px;
+  outline: 0;
+  width: 100%;
+}

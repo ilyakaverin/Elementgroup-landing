@@ -1,0 +1,9 @@
+.secondStep__Form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.secondStep__Container {
+  display: flex;
+  flex-direction: column;
+}

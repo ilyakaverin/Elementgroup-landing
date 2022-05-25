@@ -1,0 +1,7 @@
+.thirdStep__Container {
+}
+
+.thirdStep__Container label {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,10 +1,9 @@
 .main-faq-container {
   max-width: 1200px;
   margin: 1rem auto;
-  
 }
 .main-faq-container h2 {
-  color: var(--color-night)
+  color: var(--color-night);
 }
 .tabs input {
   position: absolute;

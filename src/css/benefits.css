@@ -1,8 +1,6 @@
 .main-content-benefits {
-
   display: flex;
   flex-direction: column;
-
 }
 .main-content-benefits-inner {
   max-width: 1200px;
@@ -14,11 +12,9 @@
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-
 }
 .main-content-benefits h2 {
   color: var(--color-night);
-
 }
 .box {
   --border-width: 4px;

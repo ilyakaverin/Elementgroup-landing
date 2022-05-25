@@ -1,0 +1,10 @@
+
+.firstStep__Container {
+    display: flex;
+    flex-direction: column;
+}
+.firstStep__Form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}

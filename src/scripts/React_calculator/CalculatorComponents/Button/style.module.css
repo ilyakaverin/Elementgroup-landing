@@ -1,0 +1,17 @@
+.button {
+  background: transparent;
+  border: 2px solid var(--color-night);
+  outline: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  color: var(--color-night);
+  cursor: pointer;
+}
+.button:active {
+  transform: translateY(4px);
+}
+.button:disabled {
+  opacity: 0.5;
+  transform: none;
+}

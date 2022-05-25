@@ -1,13 +1,7 @@
-.q {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .calculator {
-    background-color: ivory;
+  background-color: var(--color-day);
+  color: var(--color-night);
 }
 .stepContainer {
-    height: 50vh
+  height: 50vh;
 }

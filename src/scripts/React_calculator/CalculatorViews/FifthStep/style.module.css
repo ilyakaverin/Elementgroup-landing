@@ -1,0 +1,5 @@
+.fifthStep__Container label {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}

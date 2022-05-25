@@ -7,7 +7,6 @@ main {
   flex-direction: column;
 }
 
-
 .main-content-gallery-container ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
