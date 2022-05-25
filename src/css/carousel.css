@@ -68,7 +68,7 @@ article img {
 .slider-prev-next-control {
   height: 50px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   width: 100%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);

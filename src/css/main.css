@@ -5,20 +5,28 @@ main {
 .main-ourTeam-container {
   background-color: var(--color-night);
   padding-bottom: 2rem;
+
 }
 .main-ourTeam-container-inner {
   max-width: 1200px;
   border: 1px solid transparent;
   margin: 0 auto;
 }
+@media(max-width: 425px) {
+  .main-ourTeam-container-inner {
+    margin: 1rem;
+  }
+}
 .main-ourTeam-cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem
 }
 .main-ourTeam-container-inner .main-ourTeam-card {
   display: flex;
   position: relative;
   flex-direction: column;
-  flex-basis: 33%;
+  flex-basis: 32%;
 }
 .main-ourTeam-container-inner .main-ourTeam-card img {
   border-radius: 15px;

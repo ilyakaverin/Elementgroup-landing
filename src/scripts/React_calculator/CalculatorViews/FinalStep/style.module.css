@@ -19,5 +19,6 @@
 @media (max-width: 768px) {
   .finalStep__Container {
     flex-direction: column-reverse;
+    width: 90%
   }
 }
