@@ -1,5 +1,6 @@
 import style from "./style.module.css";
 import Input from "../../CalculatorComponents/Input/Input.jsx";
+import cn from 'classnames';
 const SecondStep = ({dispatch, action, value}) => {
   return (
     <div className={cn(style.secondStep__Container, 'animation-0')}>
