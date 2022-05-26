@@ -9,24 +9,30 @@ main {
 }
 .main-ourTeam-container-inner {
   max-width: 1200px;
-  border: 1px solid transparent;
   margin: 0 auto;
+  border: 1px solid transparent
+
 }
 @media(max-width: 425px) {
   .main-ourTeam-container-inner {
     margin: 1rem;
   }
+  .main-ourTeam-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .main-ourTeam-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem
+  gap: 1rem;
+  justify-content: space-between;
 }
 .main-ourTeam-container-inner .main-ourTeam-card {
   display: flex;
   position: relative;
   flex-direction: column;
-  flex-basis: 32%;
+
 }
 .main-ourTeam-container-inner .main-ourTeam-card img {
   border-radius: 15px;
