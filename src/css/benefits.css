@@ -60,23 +60,19 @@
 
 @media (max-width: 768px) {
   .main-content-benefits-inner {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 1rem;
+
+    
   }
   
   .main-content-benefits-inner-grid {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-
-    /*
-        scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-  
-    */
+    width: 2000px
   }
   .main-content-benefits-inner-grid::-webkit-scrollbar {
     width: 10px;
@@ -98,7 +94,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 300px
+    min-height: 400px;
+    flex-basis: 50%;
 
   }
 }
