@@ -13,31 +13,20 @@ main {
   border: 1px solid transparent
 
 }
-@media(max-width: 425px) {
-  .main-ourTeam-container-inner {
-    margin: 1rem;
-  }
-  .main-ourTeam-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 .main-ourTeam-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
 }
 .main-ourTeam-container-inner .main-ourTeam-card {
   display: flex;
   position: relative;
-  flex-direction: column;
 
 }
 .main-ourTeam-container-inner .main-ourTeam-card img {
   border-radius: 15px;
-  width: 350px;
-  height: 400px;
+  width: 300px;
   object-fit: cover;
 }
 .main-ourTeam-container-inner .main-ourTeam-card span {
@@ -47,4 +36,22 @@ main {
   border-radius: 10px;
   bottom: 2%;
   left: 1%;
+}
+@media(max-width: 425px) {
+  .main-ourTeam-container-inner {
+    margin: 1rem;
+  }
+  .main-ourTeam-cards {
+    align-items: center;
+  }
+  .main-ourTeam-cards .main-ourTeam-card {
+    flex-basis: 33%;
+  }
+  .main-ourTeam-cards img {
+    height: 150px;
+    max-width: 100%
+  }
+  .main-ourTeam-container-inner .main-ourTeam-card span {
+    font-size: 0.7rem
+  }
 }

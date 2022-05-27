@@ -3,3 +3,8 @@
   flex-direction: column-reverse;
   gap: 1rem;
 }
+.fifthStep__Container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -25,6 +25,7 @@ const SecondStep = ({ dispatch, action, value }) => {
           isChecked={value}
         />
       </form>
+      <p>Если у вас нет дизайн-проекта, архитекторы Сделано помогут вам его составить. </p>
     </div>
   );
 };

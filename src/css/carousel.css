@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 }
+.main-content-gallery-inner-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .main-content-gallery-container ul {
   display: grid;
@@ -29,17 +33,22 @@
     display: flex;
     flex-direction: column;
   }
+  .main-content-gallery-inner-container {
+    width: revert;
+    max-width: 100%;
+
+  }
   .main-content-gallery-container ul {
     grid-template-columns: auto;
   }
   .main-content-gallery-container h2 {
     font-size: 2rem;
+    margin: 1rem
   }
 }
 /*---- NUMBER OF SLIDE CONFIGURATION ----*/
 .slider-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 600px;
   position: relative;
   overflow: hidden;
   margin-bottom: 2rem;

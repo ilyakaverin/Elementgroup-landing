@@ -1,4 +1,7 @@
 .thirdStep__Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .thirdStep__Container label {

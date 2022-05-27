@@ -1,5 +1,5 @@
 .stepContainer {
-  min-height: 250px;
+  min-height: 300px;
   display: flex;
   justify-content: center;
 }
@@ -25,4 +25,7 @@
 }
 .calculator_inner_container p {
   align-self: center;
+}
+.stepContainer p {
+    font-size: 0.8rem;
 }
