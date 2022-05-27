@@ -21,7 +21,7 @@
 }
 .box {
   --border-width: 4px;
-  padding: 1rem;
+  padding: 1.6rem;
   position: relative;
   color: var(--color-day);
   background-color: var(--color-bg-day);
@@ -73,12 +73,13 @@
     
   }
   .main-content-benefits h2  {
-    margin: 1rem
+    margin: 2rem;
+    max-width: 100%;
   }
   
   .main-content-benefits-inner-grid {
     display: flex;
-    width: 2000px
+    width: 3000px
   }
   .main-content-benefits-inner::-webkit-scrollbar {
     width: 10px;
@@ -100,7 +101,7 @@
     display: flex;
     flex-direction: column;
     min-height: 400px;
-    flex-basis: 100%;
+    flex-basis: 10%;
     background: var(--color-bg-day) url('../assets/checked-svgrepo-com.svg') no-repeat;
     background-position: center 90%;
     background-size: 30%;
