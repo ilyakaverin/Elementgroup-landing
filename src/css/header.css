@@ -26,8 +26,8 @@ header {
 }
 .heading-container {
   display: flex;
-  flex-direction: column;
   border-radius: 15px;
+  flex-direction: column;
   background-size: 40%;
   background-position: right;
   max-width: 1192px;
@@ -38,6 +38,9 @@ header {
   margin-top: 1.5rem;
   max-width: 80%;
   font-size: 1.2rem;
+  padding: 1rem;
+  background-color: var(--color-night-transparent);
+  border-radius: 15px;
 }
 .logo {
   margin: 1rem;
@@ -89,20 +92,20 @@ header {
   line-height: 5rem;
   max-width: 60%;
 }
-.heading-container form {
+header form {
   margin: 1rem;
   display: flex;
   gap: 0.5rem;
+
 }
-.heading-container form input {
+header form input {
   border-radius: 5px;
   font-size: 1rem;
   flex-basis: 40%;
   outline: 0;
   padding: 1rem;
 }
-.heading-container-inner form button {
-  background: transparent;
+header form button {
   cursor: pointer;
   font-size: 1rem;
   border-radius: 5px;
@@ -166,8 +169,8 @@ header {
     flex-direction: column;
   }
   .heading-container .heading-container-inner h1 {
-    font-size: 2.5rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     margin: 1rem;
   }
   .heading-container button {
