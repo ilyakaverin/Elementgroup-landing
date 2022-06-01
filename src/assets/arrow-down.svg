@@ -4,7 +4,7 @@
     <title>arrow-down</title>
     <desc>Created with sketchtool.</desc>
     <g id="directional" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="arrow-down" fill="#ffffff">
+        <g id="arrow-down" fill="#000000">
             <polygon id="Shape" points="6 7 12 13 18 7 20 9 12 17 4 9"></polygon>
         </g>
     </g>

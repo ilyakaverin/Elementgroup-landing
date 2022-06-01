@@ -16,13 +16,13 @@ header {
   text-decoration: none;
   align-items: center;
   animation: pulse 1.5s ease infinite;
-  color: var(--color-night);
+  color: var(--color-day);
 }
 .arrow-down span {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .arrow-down img {
-  width: 50px;
+  width: 70px;
 }
 .heading-container {
   display: flex;
@@ -101,7 +101,6 @@ header form {
   max-width: 50%;
   justify-content: space-between;
   border-radius: 5px;
-
 }
 header form input {
   border-radius: 5px;
@@ -139,6 +138,7 @@ header form button {
   .heading-container {
     max-width: revert;
     margin: 1rem;
+    margin-top: 10rem;
   }
   .header-contacts button {
     display: block;
@@ -149,6 +149,9 @@ header form button {
   }
   .heading-container span {
     display: none;
+  }
+  header form {
+    max-width: 100%;
   }
   .heading-container-inner {
     max-width: 100%;
@@ -174,10 +177,6 @@ header form button {
   }
   .header-contacts img {
     width: 10px;
-  }
-  .heading-container form {
-    flex-direction: column;
-    align-self: center;
   }
   .heading-container .heading-container-inner h1 {
     font-size: 3rem;
