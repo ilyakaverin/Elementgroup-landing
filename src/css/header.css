@@ -138,7 +138,7 @@ header form button {
   .heading-container {
     max-width: revert;
     margin: 1rem;
-    margin-top: 10rem;
+    margin-top: 15vh;
   }
   .header-contacts button {
     display: block;
