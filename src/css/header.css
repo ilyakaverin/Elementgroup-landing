@@ -96,6 +96,11 @@ header form {
   margin: 1rem;
   display: flex;
   gap: 0.5rem;
+  background-color: var(--color-bg-day);
+  border: 2px solid var(--color-day);
+  max-width: 50%;
+  justify-content: space-between;
+  border-radius: 5px;
 
 }
 header form input {
@@ -103,14 +108,19 @@ header form input {
   font-size: 1rem;
   flex-basis: 40%;
   outline: 0;
-  padding: 1rem;
+  border: none;
+  padding: 1rem
 }
 header form button {
   cursor: pointer;
   font-size: 1rem;
+  margin: 0.5rem;
   border-radius: 5px;
-  flex-basis: 50%;
-  border: 2px solid var(--color-day);
+  flex-basis: 25%;
+  background-color: var(--color-day);
+  color: var(--color-bg-day);
+  border: none;
+  padding: 0.5rem;
 }
 .heading-container-inner button:hover {
   opacity: 0.5;
@@ -167,6 +177,7 @@ header form button {
   }
   .heading-container form {
     flex-direction: column;
+    align-self: center;
   }
   .heading-container .heading-container-inner h1 {
     font-size: 3rem;
