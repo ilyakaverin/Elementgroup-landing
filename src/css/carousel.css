@@ -5,7 +5,7 @@
 .main-content-gallery-inner-container {
   max-width: 1200px;
   margin: 1rem auto;
-  margin-bottom: 7.5rem;
+  margin-bottom: 8rem;
 }
 
 
@@ -127,8 +127,10 @@ background-color: var(--color-night-transparent);
   position: absolute;
   z-index: 500;
   bottom: 0px;
-  left: 10%;
   transform: translateY(50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #slider #slider-thumb label {
   color: var(--color-night);
@@ -140,6 +142,7 @@ background-color: var(--color-night-transparent);
   font-size: 12px;
   background-size: 100%;
   background-position: center;
+  background-size: cover;
   transition: all 0.3s ease-out;
   
 }
@@ -218,7 +221,7 @@ background-color: var(--color-night-transparent);
     height: 300px;
   }
   #slider #slider-thumb label  {
-    width: 100px
+    width: 90px;
   }
   #slider #slider-full .slide span {
     top: 5%;
