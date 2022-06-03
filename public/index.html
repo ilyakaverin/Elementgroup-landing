@@ -158,72 +158,56 @@
       <section class="main-content-gallery-container">
         <div class="main-content-gallery-inner-container">
           <h2>Наши работы</h2>
-          <div class="slider-container">
-            <input checked type="radio" name="slider" id="slide1" />
-            <input type="radio" name="slider" id="slide2" />
-            <input type="radio" name="slider" id="slide3" />
-            <input type="radio" name="slider" id="slide4" />
-            <input type="radio" name="slider" id="slide5" />
-  
-            <div class="slider-wrapper">
-              <div class="inner">
-                <article>
-                  <div class="info top-left">
-                    <h3>Название Работы</h3>
-                  </div>
-                  <img src="../src/assets/gal1.jpg" />
-                </article>
-  
-                <article>
-                  <div class="info bottom-right">
-                    <h3>Название работы</h3>
-                  </div>
-                  <img src="../src/assets/bg.jpg" />
-                </article>
-  
-                <article>
-                  <div class="info bottom-left">
-                    <h3>Название работы</h3>
-                  </div>
-                  <img src="../src/assets/bg.jpg" />
-                </article>
-  
-                <article>
-                  <div class="info top-right">
-                    <h3>Название работы</h3>
-                  </div>
-                  <img src="../src/assets/bg.jpg" />
-                </article>
-  
-                <article>
-                  <div class="info bottom-left">
-                    <h3>Название работы</h3>
-                  </div>
-                  <img src="../src/assets/bg.jpg" />
-                </article>
+
+          <div id="slider">
+ 
+            <div id="slider-thumb">
+              <label for="slide-1"><p>Slide One</p></label>
+              <label for="slide-2"><p>Slide Two</p></label>
+              <label for="slide-3"><p>Slide Three</p></label>
+              <label for="slide-4"><p>Slide Four</p></label>
+              <label for="slide-5"><p>Slide Five</p></label>
+              <label for="slide-6"><p>Slide Six</p></label>
+            </div>
+            
+            <div id="div">
+              <input id="slide-1" type="radio" name="slides" checked>
+              <input id="slide-2" type="radio" name="slides">
+              <input id="slide-3" type="radio" name="slides">
+              <input id="slide-4" type="radio" name="slides">
+              <input id="slide-5" type="radio" name="slides">
+              <input id="slide-6" type="radio" name="slides">
+              
+              <div id="slider-full">
+             
+                <div class="slide slide-one">
+                  <span>Title Here</span>
+                </div>
+          
+                <div class="slide slide-two">
+                  <span>Lorem Ipsum</span>
+                </div>
+                
+                <div class="slide slide-three">
+                  <span>Two</span></br><span>line title</span>
+                </div>
+                <div class="slide slide-four">
+                  <span>Two</span></br><span>line title</span>
+                </div>
+                <div class="slide slide-five">
+                  <span>Two</span></br><span>line title</span>
+                </div>
+                <div class="slide slide-six">
+                  <span>Two</span></br><span>line title</span>
+                </div>
+                
               </div>
-              <!-- .inner -->
+              
             </div>
-            <!-- .slider-wrapper -->
-  
-            <div class="slider-prev-next-control">
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
-              <label for="slide4"></label>
-              <label for="slide5"></label>
-            </div>
-            <!-- .slider-prev-next-control -->
-  
-            <div class="slider-dot-control">
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
-              <label for="slide4"></label>
-              <label for="slide5"></label>
-            </div>
-            <!-- .slider-dot-control -->
+            
           </div>
+          
+         
         </div>
         
         

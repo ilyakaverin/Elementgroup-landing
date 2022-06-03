@@ -8,9 +8,7 @@ header {
   position: relative;
 }
 .arrow-down {
-  position: absolute;
-  bottom: 1%;
-  left: 45%;
+  align-self: center;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -32,7 +30,7 @@ header {
   border-radius: 15px;
   background-size: 40%;
   background-position: right;
-  max-width: 1192px;
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -54,7 +52,7 @@ header {
   display: flex;
   border-radius: 15px;
   align-items: center;
-  max-width: 1192px;
+  max-width: 1200px;
   justify-content: space-between;
 }
 .heading-contact-container {
@@ -146,8 +144,8 @@ header form button {
     margin: 1rem;
     margin-bottom: 0;
   }
-  .heading-container span {
-    display: none;
+  .heading-container p {
+    font-size: 1rem
   }
   header form {
     max-width: 100%;
