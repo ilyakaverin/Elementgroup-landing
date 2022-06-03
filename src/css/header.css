@@ -9,7 +9,7 @@ header {
 }
 .arrow-down {
   position: absolute;
-  bottom: 0;
+  bottom: 1%;
   left: 45%;
   display: flex;
   flex-direction: column;
@@ -17,30 +17,29 @@ header {
   align-items: center;
   animation: pulse 1.5s ease infinite;
   color: var(--color-day);
+  background-color: var(--color-night-transparent);
+  padding: 1rem;
+  border-radius: 15px;
 }
 .arrow-down span {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .arrow-down img {
-  width: 70px;
+  width: 50px;
 }
 .heading-container {
   display: flex;
   border-radius: 15px;
-  flex-direction: column;
   background-size: 40%;
   background-position: right;
   max-width: 1192px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 .heading-container p {
-  margin: 1rem;
-  margin-top: 1.5rem;
   max-width: 80%;
   font-size: 1.2rem;
   padding: 1rem;
-  background-color: var(--color-night-transparent);
-  border-radius: 15px;
 }
 .logo {
   margin: 1rem;
@@ -93,7 +92,6 @@ header {
   max-width: 60%;
 }
 header form {
-  margin: 1rem;
   display: flex;
   gap: 0.5rem;
   background-color: var(--color-bg-day);
@@ -101,6 +99,7 @@ header form {
   max-width: 50%;
   justify-content: space-between;
   border-radius: 5px;
+  align-self: flex-start;
 }
 header form input {
   border-radius: 5px;
@@ -138,7 +137,6 @@ header form button {
   .heading-container {
     max-width: revert;
     margin: 1rem;
-    margin-top: 15vh;
   }
   .header-contacts button {
     display: block;
