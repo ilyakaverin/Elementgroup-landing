@@ -12,6 +12,7 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  background: url('../assets/bg.jpg') no-repeat;
   
 }
 
@@ -23,7 +24,7 @@ header {
   align-items: center;
   position: absolute;
   left: 47%;
-  bottom:0;
+  bottom:1%;
   animation: pulse 1.5s ease infinite;
   color: var(--color-day);
   background-color: var(--color-night-transparent);
@@ -160,7 +161,8 @@ header form button {
     flex-direction: column;
   }
   .arrow-down {
-    left:40%
+    left:40%;
+    bottom: 10%
   }
   .header-contacts button {
     display: block;
