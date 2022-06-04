@@ -5,8 +5,9 @@ import cn from "classnames";
 const FirstStep = ({ dispatch, action, value }) => {
   return (
     <div className={cn(style.firstStep__Container, "animation-0")}>
-      <h3>Где нужно сделать ремонт?</h3>
+
       <form className={style.firstStep__Form}>
+      <h3>Где нужно сделать ремонт?</h3>
         <Input
           type="radio"
           name="radio1"

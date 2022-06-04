@@ -4,7 +4,26 @@
   gap: 1rem;
 }
 .fifthStep__Container {
-    align-items: center;
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+  gap: 1.5rem;
+  height: fit-content;
+}
+.fifthStep__Container p {
+  max-width: 30%;
+  font-size: 0.8rem;
+  padding: 1rem;
+  background: var(--color-night);
+  border-radius: 5px;
+  color: var(--color-day);
+  margin-bottom: 0;
+}
+@media(max-width:468px) {
+  .fifthStep__Container  {
     flex-direction: column;
+  }
+  .fifthStep__Container  p {
+    max-width: 90%;
+  }
 }

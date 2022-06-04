@@ -1,5 +1,6 @@
 .fourthStep__Container label {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 1rem;
+
+display: flex;
+flex-direction: column;
+gap: 1rem
 }

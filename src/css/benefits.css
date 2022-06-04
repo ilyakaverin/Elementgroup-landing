@@ -1,11 +1,11 @@
 .main-content-benefits {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
 }
 .main-content-benefits-inner {
   max-width: 1200px;
   margin: 0 auto;
+
 }
 .main-content-benefits-inner-grid {
   display: grid;
@@ -72,7 +72,7 @@
     margin: 1rem;    
   }
   .main-content-benefits h2  {
-    margin: 2rem;
+    margin: 1rem;
     max-width: 100%;
   }
   

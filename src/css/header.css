@@ -2,17 +2,19 @@ header {
   background: url("../assets/bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: calc(100vh - 5px);
+  min-height: calc(100vh - 1px);
   display: flex;
   flex-direction: column;
   position: relative;
 }
 .arrow-down {
-  align-self: center;
   display: flex;
+  align-self: center;
   flex-direction: column;
   text-decoration: none;
   align-items: center;
+  position: absolute;
+  bottom: 0;
   animation: pulse 1.5s ease infinite;
   color: var(--color-day);
   background-color: var(--color-night-transparent);

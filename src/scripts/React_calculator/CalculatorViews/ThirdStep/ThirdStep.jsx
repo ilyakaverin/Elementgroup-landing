@@ -5,7 +5,8 @@ import cn from "classnames";
 const ThirdStep = ({ dispatch, action, value }) => {
   return (
     <div className={cn(style.thirdStep__Container, "animation-0")}>
-      <h3>Общая площадь помещения</h3>
+    <form>
+    <h3>Общая площадь помещения</h3>
       <Input
         type="range"
         min="1"
@@ -15,7 +16,9 @@ const ThirdStep = ({ dispatch, action, value }) => {
         action={action}
         isChecked={value}
       />
-      <p>{value} кв. м</p>
+      <span>{value} кв. м</span>
+    </form>
+
       <p>Если не знаете точную площадь, укажите приблизительную.
 
 Площадь влияет на общий объём работ и на количество материалов.</p>

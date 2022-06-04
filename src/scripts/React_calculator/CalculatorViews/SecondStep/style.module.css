@@ -5,5 +5,24 @@
 }
 .secondStep__Container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: fit-content;
+}
+.secondStep__Container p {
+  max-width: 30%;
+  font-size: 0.8rem;
+  padding: 1rem;
+  background: var(--color-night);
+  border-radius: 5px;
+  color: var(--color-day);
+}
+@media(max-width:468px) {
+  .secondStep__Container {
+    flex-direction: column;
+  }
+  .secondStep__Container p {
+    max-width: 90%;
+  }
 }
