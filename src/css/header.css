@@ -1,5 +1,4 @@
 header {
-  background: url("../assets/bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   min-height: calc(100vh - 1px);
@@ -7,6 +6,15 @@ header {
   flex-direction: column;
   position: relative;
 }
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  
+}
+
 .arrow-down {
   display: flex;
   align-self: center;
@@ -14,7 +22,8 @@ header {
   text-decoration: none;
   align-items: center;
   position: absolute;
-  bottom: 0;
+  left: 47%;
+  bottom:0;
   animation: pulse 1.5s ease infinite;
   color: var(--color-day);
   background-color: var(--color-night-transparent);
@@ -38,15 +47,23 @@ header {
 }
 .heading-container p {
   max-width: 80%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 1rem;
 }
 .logo {
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   max-width: 30%;
 }
 .logo img {
   max-width: 45%;
+}
+.heading-content {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .heading-contact-inner-container {
@@ -59,7 +76,7 @@ header {
 }
 .heading-contact-container {
   margin-bottom: 1rem;
-  background-color: var(--color-night-transparent);
+
 }
 .heading-contacts {
   display: flex;
@@ -72,7 +89,10 @@ header {
   text-decoration: none;
   margin-right: 1rem;
   display: flex;
-  color: var(--color-day);
+  color: var(--color-bg-day);
+}
+.heading-contacts a:last-child {
+  margin-right: 0;
 }
 .heading-contacts a:hover {
   text-decoration: underline;
@@ -139,6 +159,9 @@ header form button {
     margin: 1rem;
     flex-direction: column;
   }
+  .arrow-down {
+    left:40%
+  }
   .header-contacts button {
     display: block;
   }
@@ -193,5 +216,6 @@ header form button {
     margin: 1rem;
   }
 }
-@media (min-width: 1280px) {
+@media (max-width: 1279px) { 
+
 }

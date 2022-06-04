@@ -40,54 +40,53 @@
   </head>
   <body>
     <header>
-      <section class="heading-contact-container animated animation-0">
-        <div class="heading-contact-inner-container">
-          <picture class="logo">
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="../src/assets/logo_on_dark_background_RGB.png"
-            />
-            <source
-              media="(prefers-color-scheme: light)"
-              srcset="../src/assets/logo_on_light_background_RGB.png"
-            />
-            <img
-              src="../src/assets/logo_on_light_background_RGB.png"
-              alt="Element group"
-            />
-          </picture>
-          <div class="heading-contacts">
-            <a href="tel:88002000600">+7 (918) 246-10-99</a>
-            <a href="mailto:element@mail.ru">element@mail.ru</a>
+      <video autoplay muted loop id="myVideo">
+        <source src="../src/assets/vid.mp4" type="video/mp4" />
+        <source src="../src/assets/vid-unp.mp4" type="video/mp4" />
+      </video>
+      <div class="heading-content">
+        <section class="heading-contact-container animated animation-0">
+          <div class="heading-contact-inner-container">
+            <picture class="logo">
+              <img
+                src="../src/assets/logo_RGB_white.png"
+                alt="Element group"
+              />
+            </picture>
+            <div class="heading-contacts">
+              <a href="tel:88002000600">+7 (918) 246-10-99</a>
+              <a href="mailto:element@mail.ru">element@mail.ru</a>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="heading-container animated animation-1 lazy">
-        <div class="heading-container-inner">
-          <h1 class="animated animation-2">Дистанционный ремонт квартир</h1>
-          <p class="heading-container-description animated animation-3">
-            Дистанционный ремонт с удалённым контролем –  идеально подойдёт не
-            только жителям других регионов, но и нашим заказчикам, у которых не
-            так много свободного времени.  Работая с нами, вы получаете ремонт,
-            организованный настолько грамотно и отлажено, что сможете
-            отслеживать весь процесс в режиме онлайн.
-          </p>
-        </div>
-        <form id="headerForm" netlify>
-          <input
-            type="tel"
-            name="phone"
-            id="phoneInput"
-            placeholder="Введите телефон"
-          />
-          <button type="submit" class="animated animation-4">
-            Получить консультацию
-          </button>
-        </form>
-      </section>
-      <a href="#benefits" class="arrow-down"
-        ><span>Подробнее</span><img src="../src/assets/arrow-down.svg" alt=""
-      /></a>
+        </section>
+        <section class="heading-container animated animation-1 lazy">
+          <div class="heading-container-inner">
+            <h1 class="animated animation-2">Дистанционный ремонт квартир</h1>
+            <p class="heading-container-description animated animation-3">
+              Дистанционный ремонт с удалённым контролем –  идеально подойдёт не
+              только жителям других регионов, но и нашим заказчикам, у которых не
+              так много свободного времени.  Работая с нами, вы получаете ремонт,
+              организованный настолько грамотно и отлажено, что сможете
+              отслеживать весь процесс в режиме онлайн.
+            </p>
+          </div>
+          <form id="headerForm" netlify>
+            <input
+              type="tel"
+              name="phone"
+              id="phoneInput"
+              placeholder="Введите телефон"
+            />
+            <button type="submit" class="animated animation-4">
+              Получить консультацию
+            </button>
+          </form>
+        </section>
+        <a href="#benefits" class="arrow-down"
+          ><span>Подробнее</span><img src="../src/assets/arrow-down.svg" alt=""
+        /></a>
+
+      </div>
     </header>
     <main class="animated animation-5">
       <section id="benefits" class="main-content-benefits">
@@ -160,12 +159,12 @@
           <h2>Наши работы</h2>
           <div id="slider">
             <div id="slider-thumb">
-              <label for="slide-1"><p>Slide One</p></label>
-              <label for="slide-2"><p>Slide Two</p></label>
-              <label for="slide-3"><p>Slide Three</p></label>
-              <label for="slide-4"><p>Slide Four</p></label>
-              <label for="slide-5"><p>Slide Five</p></label>
-              <label for="slide-6"><p>Slide Six</p></label>
+              <label for="slide-1"><p>Рабочий кабинет</p></label>
+              <label for="slide-2"><p>Зал</p></label>
+              <label for="slide-3"><p>Корридор</p></label>
+              <label for="slide-4"><p>Зал</p></label>
+              <label for="slide-5"><p>Еще зал</p></label>
+              <label for="slide-6"><p>Еще Корридор</p></label>
             </div>
             <div id="div">
               <input id="slide-1" type="radio" name="slides" checked>
