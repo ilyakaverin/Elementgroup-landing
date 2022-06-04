@@ -161,8 +161,7 @@ header form button {
     flex-direction: column;
   }
   .arrow-down {
-    left:40%;
-    bottom: 10%
+    display:none
   }
   .header-contacts button {
     display: block;
