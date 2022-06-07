@@ -5,7 +5,7 @@ import cn from "classnames";
 
 const FinalStep = ({ dispatch, action, value }) => {
   return (
-    <div className={cn(style.finalStep__Container, "animation-0")}>
+    <div className={cn(style.finalStep__Container, "animation-3")}>
       <div className={style.finalStep__Data}>
         <span>Тип помещения: {value.type}</span>
         <span>Нужен дизайн-проект?: {value.design}</span>

@@ -4,7 +4,7 @@ import cn from "classnames";
 
 const FifthStep = ({ dispatch, action, value }) => {
   return (
-    <div className={cn(style.fifthStep__Container, "animation-0")}>
+    <div className={cn(style.fifthStep__Container, "animation-3")}>
       <form>
         <Input
           type="number"

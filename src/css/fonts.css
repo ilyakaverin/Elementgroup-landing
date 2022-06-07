@@ -3,3 +3,7 @@
   font-family: "Fira sans";
   src: url("../../public/fonts/FiraSansCondensed-Regular.ttf");
 }
+@font-face {
+  font-family: "Fira sans light";
+  src: url("../../public/fonts/FiraSansCondensed-Light.ttf");
+}

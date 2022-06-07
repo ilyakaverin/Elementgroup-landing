@@ -75,7 +75,6 @@ const Calculator = () => {
     if (stepsCount.steps !== 1 && stepsCount.steps !== 6) {
       dispatchSteps({ type: "enableButtons" });
     }
-    console.log(state);
   }, [stepsCount.steps]);
 
   function switchComponents(step) {

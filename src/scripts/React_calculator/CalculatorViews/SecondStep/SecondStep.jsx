@@ -3,7 +3,7 @@ import Input from "../../CalculatorComponents/Input/Input.jsx";
 import cn from "classnames";
 const SecondStep = ({ dispatch, action, value }) => {
   return (
-    <div className={cn(style.secondStep__Container, "animation-0")}>
+    <div className={cn(style.secondStep__Container, "animation-3")}>
       <form className={style.secondStep__Form}>
       <h3>Нужен ли дизайн проект?</h3>
         <Input

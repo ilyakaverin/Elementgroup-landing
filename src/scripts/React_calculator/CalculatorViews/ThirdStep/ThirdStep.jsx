@@ -4,7 +4,7 @@ import cn from "classnames";
 
 const ThirdStep = ({ dispatch, action, value }) => {
   return (
-    <div className={cn(style.thirdStep__Container, "animation-0")}>
+    <div className={cn(style.thirdStep__Container, "animation-3")}>
     <form>
     <h3>Общая площадь помещения</h3>
       <Input

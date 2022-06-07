@@ -1,6 +1,7 @@
 .main-content-benefits {
   display: flex;
   flex-direction: column;
+  background-color: var(--color-day);
 }
 .main-content-benefits-inner {
   max-width: 1200px;
@@ -12,17 +13,18 @@
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .main-content-benefits h2 {
-  color: var(--color-day);
+  color: var(--color-night);
   max-width: 1200px;
 }
 .box {
   --border-width: 4px;
   padding: 1.6rem;
   position: relative;
-  color: var(--color-night);
-  background-color: var(--color-day);
+  color: var(--color-day);
+  background-color: var(--color-bg-day);
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -85,7 +87,7 @@
     height: 10px;
   }
   .main-content-benefits-inner::-webkit-scrollbar-thumb {
-    background: var(--color-bg-day);
+    background: var(--color-day);
     border-radius: 10px;
   }
   .main-content-benefits-inner::-webkit-scrollbar-track {
@@ -101,7 +103,7 @@
     flex-direction: column;
     min-height: 400px;
     flex-basis: 10%;
-    background: var(--color-day) url('../assets/checked-svgrepo-com.svg') no-repeat;
+    background: var(--color-bg-day) url('../assets/checked-svgrepo-com.svg') no-repeat;
     background-position: center 90%;
     background-size: 20%;
     border-radius: 15px;

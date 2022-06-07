@@ -13,6 +13,8 @@ header {
   min-width: 100%;
   min-height: 100%;
   background: url('../assets/bg.jpg') no-repeat;
+  object-fit: contain;
+  filter: blur(5px);
   
 }
 
@@ -23,19 +25,21 @@ header {
   text-decoration: none;
   align-items: center;
   position: absolute;
-  left: 47%;
+  left: 45%;
   bottom:1%;
-  animation: pulse 1.5s ease infinite;
   color: var(--color-day);
   background-color: var(--color-night-transparent);
   padding: 1rem;
-  border-radius: 15px;
+  border-radius: 10px;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
 }
 .arrow-down span {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .arrow-down img {
-  width: 50px;
+  width: 35px;
 }
 .heading-container {
   display: flex;
@@ -112,7 +116,7 @@ header {
   line-height: 5rem;
   max-width: 60%;
 }
-header form {
+.phoneForm {
   display: flex;
   gap: 0.5rem;
   background-color: var(--color-bg-day);
@@ -122,7 +126,7 @@ header form {
   border-radius: 5px;
   align-self: flex-start;
 }
-header form input {
+.phoneForm input {
   border-radius: 5px;
   font-size: 1rem;
   flex-basis: 40%;
@@ -130,7 +134,7 @@ header form input {
   border: none;
   padding: 1rem
 }
-header form button {
+.phoneForm button {
   cursor: pointer;
   font-size: 1rem;
   margin: 0.5rem;
@@ -141,18 +145,10 @@ header form button {
   border: none;
   padding: 0.5rem;
 }
-.heading-container-inner button:hover {
+.phoneForm button:hover {
   opacity: 0.5;
 }
-.heading-contact-container button {
-  background: transparent;
-  border-radius: 10px;
-  flex-basis: 50%;
-  padding: 0.8rem;
-}
-.heading-contact-container button:active {
-  transform: translateY(5px);
-}
+
 
 @media (max-width: 768px) {
   .heading-container {
@@ -161,7 +157,7 @@ header form button {
     flex-direction: column;
   }
   .arrow-down {
-    display:none
+    left: 30%
   }
   .header-contacts button {
     display: block;

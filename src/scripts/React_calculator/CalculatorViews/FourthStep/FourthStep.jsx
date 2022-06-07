@@ -4,7 +4,7 @@ import cn from "classnames";
 
 const FourthStep = ({ dispatch, action, value }) => {
   return (
-    <div className={cn(style.fourthStep__Container, "animation-0")}>
+    <div className={cn(style.fourthStep__Container, "animation-3")}>
       <Input
         type="number"
         placeholder="Пример: 1000000"
