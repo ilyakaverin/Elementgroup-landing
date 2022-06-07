@@ -159,9 +159,6 @@ header {
   .arrow-down {
     left: 30%
   }
-  .header-contacts button {
-    display: block;
-  }
   .heading-contact-inner-container {
     margin: 1rem;
     margin-bottom: 0;
@@ -169,7 +166,7 @@ header {
   .heading-container p {
     font-size: 1rem
   }
-  header form {
+  .phoneForm {
     max-width: 100%;
   }
   .heading-container-inner {
