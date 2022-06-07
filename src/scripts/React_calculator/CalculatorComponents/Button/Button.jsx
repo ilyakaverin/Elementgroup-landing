@@ -1,4 +1,4 @@
-import style from "./style.module.css";
+import * as style from "./style.module.css";
 
 const Button = ({ name, click, isDisabled, action }) => {
   function handleClick() {

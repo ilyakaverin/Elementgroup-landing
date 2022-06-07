@@ -1,4 +1,4 @@
-import style from "./style.module.css";
+import * as style from "./style.module.css";
 import Input from "../../CalculatorComponents/Input/Input.jsx";
 import cn from "classnames";
 const SecondStep = ({ dispatch, action, value }) => {

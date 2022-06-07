@@ -1,5 +1,5 @@
 import Input from "../../CalculatorComponents/Input/Input.jsx";
-import style from "./style.module.css";
+import * as style from "./style.module.css";
 import cn from "classnames";
 
 const ThirdStep = ({ dispatch, action, value }) => {

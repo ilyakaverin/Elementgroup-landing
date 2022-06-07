@@ -1,4 +1,4 @@
-import style from "./style.module.css";
+import * as style from "./style.module.css";
 import Button from "../../CalculatorComponents/Button/Button.jsx";
 import Input from "../../CalculatorComponents/Input/Input";
 import cn from "classnames";
