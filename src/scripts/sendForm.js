@@ -14,8 +14,8 @@ export default () => {
     if (path === "data") {
       try {
         await axios.post("send.php", state.data);
+        observer.loading = false;
       } catch (e) {
-        console.log("eba");
         observer.loading = false;
       }
     }
