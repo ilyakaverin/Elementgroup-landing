@@ -1,6 +1,5 @@
 import { useReducer, useEffect } from "react";
 import { stepReducer, optionReducer } from "./reducers.js";
-import { stringifyState } from "./service.js";
 import axios from "axios";
 import * as style from "./style.module.css";
 import FirstStep from "./CalculatorViews/FirstStep/FirstStep.jsx";
@@ -32,7 +31,6 @@ const Calculator = () => {
     steps: 1,
   });
   useEffect(() => {
-    console.log(state);
     if (stepsCount.steps === 6) {
       dispatchSteps({ type: "disableNext" });
     }
@@ -43,10 +41,12 @@ const Calculator = () => {
       dispatchSteps({ type: "enableButtons" });
     }
     if (state.sendOptions.isReady) {
-      const converted = stringifyState(state);
+
+      const {type, design, area, budget, rooms, phone: telephone } = state;
+  
       dispatch({ type: "disableCalculatorSendButton" });
       axios
-        .post("send.php", converted)
+        .post("send.php", { type, design, area, budget, rooms, telephone, formFromCalculator: true })
         .then(() => {
           dispatch({ type: "successSent" });
         })

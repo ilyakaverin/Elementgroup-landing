@@ -184,7 +184,6 @@
 #slider #slider-thumb label:hover {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
   background-size: 110%;
-
   margin-top: -5px;
 }
 #slider #slider-thumb label:hover p {
@@ -220,7 +219,7 @@
 
 @media (max-width: 1279px) {
   #slider {
-    height: 300px;
+    height: 350px;
   }
   #slider #slider-thumb label {
     width: 59px;
@@ -233,7 +232,7 @@
   #slider #slider-thumb {
     height: 70px;
     left: 0;
-    position: unset;
+    
   }
   .main-content-gallery-inner-container {
     margin: 1rem;

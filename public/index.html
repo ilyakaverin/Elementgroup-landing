@@ -278,7 +278,13 @@
             <img src="../src/assets/logo_RGB_white.png" width="220px" alt="" />
           </a>
           <form class="phoneForm" id="footerForm" >
-            <input type="text" name="" placeholder="Введите телефон">
+            <input 
+            type="text" 
+            placeholder="Введите телефон"
+            name="phone"
+            pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+            title="Пример: 89185556677"
+            >
             <button type="submit">Получить консультацию</button>
           </form>
         </div>

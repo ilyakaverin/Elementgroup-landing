@@ -33,12 +33,12 @@ export default () => {
   });
 
   forms.forEach((form) => {
-    const button = form.querySelector(" button");
-    observer.currentButton = button;
+    
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-
+      const button = form.querySelector("button");
+      observer.currentButton = button;
       const inputData = new FormData(e.target);
       observer.loading = true;
       observer.data = inputData;

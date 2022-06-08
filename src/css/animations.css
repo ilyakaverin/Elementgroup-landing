@@ -3,8 +3,8 @@
   animation-play-state: running;
 }
 .animation-0 {
-  animation: fadeInUp 1.5s ease 1.5s backwards;
+  animation: fade-heading 1.5s ease 1.5s backwards;
 }
 .animation-1 {
-  animation: fadeInUp 1.5s ease 1s backwards;
+  animation: fade-heading 1.5s ease 1s backwards;
 }
