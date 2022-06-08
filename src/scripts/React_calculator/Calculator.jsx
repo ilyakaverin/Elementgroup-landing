@@ -1,6 +1,8 @@
 import { useReducer, useEffect } from "react";
-import { stepReducer } from "./reducers.js";
-import style from "./style.module.css";
+import { stepReducer, optionReducer } from "./reducers.js";
+import { stringifyState } from "./service.js";
+import axios from "axios";
+import * as style from "./style.module.css";
 import FirstStep from "./CalculatorViews/FirstStep/FirstStep.jsx";
 import SecondStep from "./CalculatorViews/SecondStep/SecondStep.jsx";
 import ThirdStep from "./CalculatorViews/ThirdStep/ThirdStep.jsx";
@@ -8,48 +10,6 @@ import FourthStep from "./CalculatorViews/FourthStep/FourthStep.jsx";
 import Button from "./CalculatorComponents/Button/Button.jsx";
 import FinalStep from "./CalculatorViews/FinalStep/FinalStep.jsx";
 import FifthStep from "./CalculatorViews/FifthStep/FifthStep.jsx";
-
-function optionReducer(state, action) {
-  //
-  switch (action.type) {
-    case "FirstStep": {
-      return {
-        ...state,
-        type: action.value,
-      };
-    }
-    case "SecondStep": {
-      return {
-        ...state,
-        design: action.value,
-      };
-    }
-    case "ThirdStep": {
-      return {
-        ...state,
-        area: action.value,
-      };
-    }
-    case "FourthStep": {
-      return {
-        ...state,
-        budget: action.value,
-      };
-    }
-    case "FifthStep": {
-      return {
-        ...state,
-        rooms: action.value,
-      };
-    }
-    case "FinalStep": {
-      return {
-        ...state,
-        phone: action.value,
-      };
-    }
-  }
-}
 
 const Calculator = () => {
   const [state, dispatch] = useReducer(optionReducer, {
@@ -59,13 +19,20 @@ const Calculator = () => {
     budget: 0,
     rooms: 3,
     phone: "",
+    sendOptions: {
+      isReady: false,
+      sent: false,
+      isDisabledButton: false,
+    },
   });
+
   const [stepsCount, dispatchSteps] = useReducer(stepReducer, {
     isDisabledNext: false,
     isDisabledPrev: false,
     steps: 1,
   });
   useEffect(() => {
+    console.log(state);
     if (stepsCount.steps === 6) {
       dispatchSteps({ type: "disableNext" });
     }
@@ -75,7 +42,17 @@ const Calculator = () => {
     if (stepsCount.steps !== 1 && stepsCount.steps !== 6) {
       dispatchSteps({ type: "enableButtons" });
     }
-  }, [stepsCount.steps]);
+    if (state.sendOptions.isReady) {
+      const converted = stringifyState(state);
+      dispatch({ type: "disableCalculatorSendButton" });
+      axios
+        .post("send.php", converted)
+        .then(() => {
+          dispatch({ type: "successSent" });
+        })
+        .catch((e) => console.log(e.message));
+    }
+  }, [stepsCount.steps, state.sendOptions.isReady]);
 
   function switchComponents(step) {
     switch (step) {

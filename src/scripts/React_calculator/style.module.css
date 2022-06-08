@@ -2,7 +2,6 @@
   min-height: 250px;
   display: flex;
   justify-content: center;
-
 }
 .calculator_inner_container {
   max-width: 1200px;
@@ -29,9 +28,9 @@
   align-self: center;
 }
 .stepContainer p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .stepContainer {
     min-height: 400px;
   }

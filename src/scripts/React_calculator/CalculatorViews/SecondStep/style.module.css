@@ -18,7 +18,7 @@
   border-radius: 5px;
   color: var(--color-day);
 }
-@media(max-width:468px) {
+@media (max-width: 468px) {
   .secondStep__Container {
     flex-direction: column;
   }

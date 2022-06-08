@@ -12,13 +12,22 @@
   "devDependencies": {
     "@parcel/packager-raw-url": "2.5.0",
     "@parcel/transformer-webmanifest": "2.5.0",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "os-browserify": "^0.3.0",
     "parcel": "^2.5.0",
-    "prettier": "^2.6.2"
+    "path-browserify": "^1.0.1",
+    "prettier": "^2.6.2",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.4"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.1",
+    "on-change": "^4.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   }

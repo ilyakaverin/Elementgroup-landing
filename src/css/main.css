@@ -1,13 +1,10 @@
 .main-ourTeam-container {
   background-color: var(--color-bg-day);
-  padding-bottom: 2rem;
-
 }
 .main-ourTeam-container-inner {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid transparent
-
+  border: 1px solid transparent;
 }
 
 .main-ourTeam-cards {
@@ -18,7 +15,6 @@
 .main-ourTeam-container-inner .main-ourTeam-card {
   display: flex;
   position: relative;
-
 }
 .main-ourTeam-container-inner .main-ourTeam-card img {
   border-radius: 15px;
@@ -33,7 +29,7 @@
   bottom: 2%;
   left: 1%;
 }
-@media(max-width: 425px) {
+@media (max-width: 425px) {
   .main-ourTeam-container-inner {
     margin: 1rem;
   }
@@ -45,9 +41,9 @@
   }
   .main-ourTeam-cards img {
     height: 150px;
-    max-width: 100%
+    max-width: 100%;
   }
   .main-ourTeam-container-inner .main-ourTeam-card span {
-    font-size: 0.7rem
+    font-size: 0.7rem;
   }
 }

@@ -5,7 +5,7 @@ const SecondStep = ({ dispatch, action, value }) => {
   return (
     <div className={cn(style.secondStep__Container, "animation-3")}>
       <form className={style.secondStep__Form}>
-      <h3>Нужен ли дизайн проект?</h3>
+        <h3>Нужен ли дизайн проект?</h3>
         <Input
           type="radio"
           name="radio2"
@@ -25,7 +25,9 @@ const SecondStep = ({ dispatch, action, value }) => {
           isChecked={value}
         />
       </form>
-      <p>Если у вас нет дизайн-проекта, наши дизайнеры помогут вам его составить. </p>
+      <p>
+        Если у вас нет дизайн-проекта, наши дизайнеры помогут вам его составить.{" "}
+      </p>
     </div>
   );
 };

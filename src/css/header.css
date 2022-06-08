@@ -12,35 +12,23 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background: url('../assets/bg.jpg') no-repeat;
+  background: url("../assets/bg.jpg") no-repeat;
   object-fit: contain;
   filter: blur(5px);
-  
 }
 
 .arrow-down {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  text-decoration: none;
-  align-items: center;
-  position: absolute;
-  left: 45%;
-  bottom:1%;
   color: var(--color-day);
   background-color: var(--color-night-transparent);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   gap: 0.5rem;
   border: none;
   cursor: pointer;
+  width: 100%;
+  font-size: 1.3rem;
 }
-.arrow-down span {
-  font-size: 0.7rem;
-}
-.arrow-down img {
-  width: 35px;
-}
+
 .heading-container {
   display: flex;
   border-radius: 15px;
@@ -78,10 +66,6 @@ header {
   align-items: center;
   max-width: 1200px;
   justify-content: space-between;
-}
-.heading-contact-container {
-  margin-bottom: 1rem;
-
 }
 .heading-contacts {
   display: flex;
@@ -121,10 +105,10 @@ header {
   gap: 0.5rem;
   background-color: var(--color-bg-day);
   border: 2px solid var(--color-day);
-  max-width: 50%;
   justify-content: space-between;
   border-radius: 5px;
   align-self: flex-start;
+  margin-bottom: 1rem;
 }
 .phoneForm input {
   border-radius: 5px;
@@ -132,23 +116,26 @@ header {
   flex-basis: 40%;
   outline: 0;
   border: none;
-  padding: 1rem
+  padding: 1rem;
 }
 .phoneForm button {
   cursor: pointer;
   font-size: 1rem;
   margin: 0.5rem;
   border-radius: 5px;
-  flex-basis: 25%;
+  width: 130px;
+  height: 50px;
   background-color: var(--color-day);
   color: var(--color-bg-day);
   border: none;
   padding: 0.5rem;
 }
+.phoneForm button:disabled {
+  opacity: 0.5;
+}
 .phoneForm button:hover {
   opacity: 0.5;
 }
-
 
 @media (max-width: 768px) {
   .heading-container {
@@ -157,14 +144,14 @@ header {
     flex-direction: column;
   }
   .arrow-down {
-    left: 30%
+    font-size: 1.5rem;
   }
   .heading-contact-inner-container {
     margin: 1rem;
     margin-bottom: 0;
   }
   .heading-container p {
-    font-size: 1rem
+    font-size: 1rem;
   }
   .phoneForm {
     max-width: 100%;
@@ -199,10 +186,6 @@ header {
     line-height: 3.5rem;
     margin: 1rem;
   }
-  .heading-container button {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
 }
 @media (min-width: 769px) and (max-width: 1279px) {
   .heading-container-inner {
@@ -210,6 +193,5 @@ header {
     margin: 1rem;
   }
 }
-@media (max-width: 1279px) { 
-
+@media (max-width: 1279px) {
 }

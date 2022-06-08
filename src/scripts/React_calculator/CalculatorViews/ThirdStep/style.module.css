@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem
+  gap: 1rem;
 }
 .thirdStep__Container p {
   max-width: 30%;
@@ -24,7 +24,7 @@
   border-radius: 5px;
   color: var(--color-day);
 }
-@media(max-width:468px) {
+@media (max-width: 468px) {
   .thirdStep__Container {
     flex-direction: column;
   }

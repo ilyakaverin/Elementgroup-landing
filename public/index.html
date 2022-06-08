@@ -41,7 +41,7 @@
   <body>
     <header>
       <video autoplay muted loop id="myVideo">
-        <source src="../src/assets/vid.mp4" type="video/mp4" />
+        <!-- <source src="../src/assets/vid.mp4" type="video/mp4" /> -->
         <source src="../src/assets/vid-unp.mp4" type="video/mp4" />
       </video>
       <div class="heading-content">
@@ -70,21 +70,26 @@
               отслеживать весь процесс в режиме онлайн.
             </p>
           </div>
-          <form id="headerForm" class="phoneForm" method="POST" action="../api/send.php">
-            <input
-              type="tel"
-              name="phone"
-              id="phoneInput"
-              placeholder="Введите телефон"
-            />
-            <button type="submit">
-              Получить консультацию
-            </button>
-          </form>
+          <section>
+            <form id="headerForm" class="phoneForm">
+              <input
+                type="tel"
+                name="phone"
+                id="phoneInput"
+                placeholder="Введите телефон"
+                pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+                title="Пример: 89185556677"
+                required
+              />
+              <button type="submit" name="submit">
+                Получить консультацию
+              </button>
+            </form>
+            <button class="arrow-down animated animation-1">Рассчитать стоимость ремонта</button>
+          </section>
+
         </section>
-        <button class="arrow-down animated animation-1"
-          ><span>Рассчитать стоимость ремонта</span><img src="../src/assets/arrow-down.svg" alt=""
-        /></button>
+
 
       </div>
     </header>
@@ -282,7 +287,7 @@
             <h3>Контакты</h3>
             <a href="tel:88002000600"> <img src="../src/assets/phone-white.svg" width="20px" alt="phone" /> 88002000600</a>
             <a href="mailto:element@mail.ru"><img src="../src/assets/mail-white.svg" width="20px" alt="email" />element@mail.ru</a>
-            <a href="#"><img src="../src/assets/location.svg" width="20px" alt="email" />г. Новороссийск</a href="google.com">
+            <a href="https://www.google.com/"><img src="../src/assets/location.svg" width="20px" alt="email" />г. Новороссийск</a>
           </div>
           <div class="footer-column">
             <h3>Технологии</h3>
@@ -293,8 +298,6 @@
           <div class="footer-column">
             <h3>Информация</h3>
             <a href="privacy.html">Политика конфиденциальности</a>
-            <a>линк</a>
-            <a>линк</a>
           </div>
         </div>
         <div class="footer-row">

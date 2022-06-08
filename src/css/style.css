@@ -36,6 +36,9 @@ body {
 h2 {
   font-size: 3rem;
 }
+a:hover {
+  text-decoration: underline;
+}
 .arrow-up {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -44,7 +47,8 @@ h2 {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background: url('../assets/arrow-up.svg') no-repeat var(--color-night-transparent) center center;
+  background: url("../assets/arrow-up.svg") no-repeat
+    var(--color-night-transparent) center center;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 25px; /* Some padding */
@@ -57,7 +61,7 @@ h2 {
 }
 .nav__privacy a {
   color: var(--color-bg-day);
-  padding:1rem
+  padding: 1rem;
 }
 @media (max-width: 768px) {
   h2 {
