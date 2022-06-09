@@ -1,4 +1,4 @@
-@import "./fonts.css";
+@import url("../../node_modules/font-awesome/css/font-awesome.min.css");
 @import "./keyframes.css";
 @import "./animations.css";
 @import "./header.css";
@@ -9,6 +9,11 @@
 @import "./footer.css";
 @import "./calculator.css";
 @import "./ourteam.css";
+
+@font-face {
+  font-family: "Fira sans";
+  src: url("../../public/fonts/FiraSansCondensed-Regular.ttf");
+}
 
 :root {
   --color-day: hsla(228, 6%, 16%, 1);
@@ -54,10 +59,38 @@ a:hover {
   padding: 25px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
 }
+.cookies {
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--color-night-transparent);
+  width: 100%;
+}
+.cookies span {
+  font-size: 0.8rem;
+}
+.cookies button {
+  background: none;
+  border: 2px solid var(--color-day);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+.cookies button:active {
+  transform: translateY(10%);
+}
+.cookies img {
+  width: 40px
+}
 .nav__privacy {
   background-color: var(--color-day);
   display: flex;
   justify-content: center;
+  
 }
 .nav__privacy a {
   color: var(--color-bg-day);

@@ -1,7 +1,6 @@
 .thirdStep__Container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 1.5rem;
   height: fit-content;
 }

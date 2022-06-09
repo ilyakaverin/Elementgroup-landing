@@ -76,28 +76,25 @@ export function optionReducer(state, action) {
     case "sendData": {
       return {
         ...state,
-        sendOptions: {
-          ...state,
-          isReady: true,
-        },
+        isReady: true,
       };
     }
     case "successSent": {
       return {
         ...state,
-        sendOptions: {
-          ...state,
-          sent: true,
-        },
+        sent: true,
       };
     }
     case "disableCalculatorSendButton": {
       return {
         ...state,
-        sendOptions: {
-          ...state,
-          isDisabledButton: true,
-        },
+        isDisabledButton: true,
+      };
+    }
+    case "enableCalculatorSendButton": {
+      return {
+        ...state,
+        isDisabledButton: false,
       };
     }
   }

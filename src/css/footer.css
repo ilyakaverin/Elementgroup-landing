@@ -17,6 +17,9 @@ footer {
   flex-direction: column;
   gap: 0.6rem;
 }
+.footer-column h3 {
+  margin-bottom: 0.5rem;
+}
 .footer-row {
   display: flex;
   justify-content: space-between;
@@ -58,11 +61,11 @@ footer h4 {
     margin: 1rem;
   }
   footer .footer-row:first-child {
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 0;
   }
   footer .footer-row:nth-child(2) {
     justify-content: unset;
+    margin-top: 0;
   }
   footer .footer-row:nth-child(2) .footer-column:nth-child(2) {
     margin-left: 3rem;

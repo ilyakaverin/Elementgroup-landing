@@ -5,6 +5,9 @@
   justify-content: center;
   flex-direction: column;
 }
+.finalStep__Container h3 {
+  text-align: center;
+}
 
 .finalStep__Data {
   display: flex;

@@ -13,6 +13,8 @@ const Input = ({
   required,
   minLength,
   maxLength,
+  min,
+  max
 }) => {
   function handleInput(e) {
     click && click({ type: action, value: e.target.value });
@@ -31,8 +33,8 @@ const Input = ({
         onChange={(e) => handleInput(e)}
         minLength={minLength}
         maxLength={maxLength}
-        min="1"
-        max="200"
+        min={min}
+        max={max}
         step="1"
         pattern={pattern}
         required={required}
