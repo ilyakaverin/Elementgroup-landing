@@ -46,6 +46,10 @@ footer h4 {
 #footerForm button {
   font-size: 0.8rem;
 }
+.footer-social {
+  display: flex;
+  gap: 0.5rem;
+}
 .footer-social img {
   width: 35px;
   height: 35px;
@@ -67,9 +71,7 @@ footer h4 {
     justify-content: unset;
     margin-top: 0;
   }
-  footer .footer-row:nth-child(2) .footer-column:nth-child(2) {
-    margin-left: 3rem;
-  }
+
   #footerForm {
     margin-top: 1rem;
   }

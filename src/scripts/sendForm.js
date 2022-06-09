@@ -28,14 +28,12 @@ export default () => {
           state.currentButton.setAttribute("disabled", true);
           break;
         case false:
-          state.currentButton.textContent = "Отправили";
+          state.currentButton.textContent = "Мы вам перезвоним!";
       }
     }
   });
 
   forms.forEach((form) => {
-    
-
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const button = form.querySelector("button");

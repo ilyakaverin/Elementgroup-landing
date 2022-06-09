@@ -2,8 +2,8 @@ export const convertStateIntoString = (state) => {
     const renameKeys = {
         "Тип помещения": state.type,
         "Нужен дизайн-проект": state.design,
-        "Площадь помещения": state.area,
-        "Бюджет": state.budget,
+        "Площадь помещения": `${state.area} кв. м`,
+        "Бюджет": `${state.budget} тысяч рублей`,
         "Количество комнат": state.rooms,
         "Номер телефона": state.phone
     }

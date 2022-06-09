@@ -13,6 +13,7 @@
 @font-face {
   font-family: "Fira sans";
   src: url("../../public/fonts/FiraSansCondensed-Regular.ttf");
+  font-display: swap;
 }
 
 :root {
@@ -47,8 +48,8 @@ a:hover {
 .arrow-up {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 55px; /* Place the button 30px from the right */
+  bottom: 85px; /* Place the button at the bottom of the page */
+  right: 25px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */

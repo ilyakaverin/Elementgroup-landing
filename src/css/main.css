@@ -16,10 +16,27 @@
   display: flex;
   position: relative;
 }
-.main-ourTeam-container-inner .main-ourTeam-card img {
+
+.main-ourTeam-card img {
   border-radius: 15px;
-  width: 300px;
+  width: 250px;
   object-fit: cover;
+}
+.main-ourTeam-card .social {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  display: none;
+}
+.main-ourTeam-card .social:hover {
+  display: block;
+}
+.main-ourTeam-card .social img {
+  width:50px;
+}
+.main-ourTeam-card img:hover + .social {
+  display:block;
+  animation: fadeInRight ease 0.5s;
 }
 .main-ourTeam-container-inner .main-ourTeam-card span {
   position: absolute;
@@ -42,6 +59,10 @@
   .main-ourTeam-cards img {
     height: 150px;
     max-width: 100%;
+  }
+  .main-ourTeam-cards .social img {
+    height: auto;
+    width: 30px
   }
   .main-ourTeam-container-inner .main-ourTeam-card span {
     font-size: 0.7rem;

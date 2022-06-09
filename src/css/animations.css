@@ -6,8 +6,8 @@
   animation: fade-heading 1.5s ease 1.5s backwards;
 }
 .animation-1 {
-  animation: fade-heading 1.5s ease 1s backwards;
+  animation: fade-heading 1.5s ease 2s backwards;
 }
 .animation-2 {
-  animation: fade-heading 1.5s ease 1s backwards;
+  animation: fade-heading 1.5s ease 3s backwards;
 }
