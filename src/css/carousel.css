@@ -204,8 +204,12 @@
   }
   #slider #slider-thumb label {
     width: 59px;
-    border-radius: 10px;
+    
   }
+  #slider #slider-thumb label:hover {
+    background-size: cover;
+  }
+
   #slider #slider-full .slide span {
     top: 5%;
     left: 5%;
