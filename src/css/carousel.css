@@ -115,7 +115,6 @@
   position: absolute;
   bottom: 0;
   left: 10%;
-
 }
 #slider #slider-thumb label {
   color: var(--color-night);
@@ -204,7 +203,6 @@
   }
   #slider #slider-thumb label {
     width: 59px;
-    
   }
   #slider #slider-thumb label:hover {
     background-size: cover;
@@ -222,8 +220,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-  
-    
   }
   .main-content-gallery-inner-container {
     margin: 1rem;

@@ -35,8 +35,6 @@
 .main-content-benefits .a {
   grid-column: 1;
   grid-row: 1;
-  
-  
 }
 .main-content-benefits .b {
   grid-column: 2;
@@ -49,17 +47,14 @@
 .main-content-benefits .d {
   grid-column: 3;
   grid-row: 1 / 3;
- 
 }
 .main-content-benefits .e {
   grid-column: 4;
   grid-row: 1;
- 
 }
 .main-content-benefits .f {
   grid-column: 4;
   grid-row: 2;
-  
 }
 .main-content-benefits .g {
   grid-column: 1 / 5;

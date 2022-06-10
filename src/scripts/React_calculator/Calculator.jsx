@@ -1,6 +1,6 @@
 import { useReducer, useEffect } from "react";
 import { stepReducer, optionReducer } from "./reducers.js";
-import { convertStateIntoString, regex } from '../service.js';
+import { convertStateIntoString, regex } from "../service.js";
 import axios from "axios";
 import * as style from "./style.module.css";
 import FirstStep from "./CalculatorViews/FirstStep/FirstStep.jsx";
@@ -22,7 +22,7 @@ const Calculator = () => {
     isReady: false,
     sent: false,
     isDisabledButton: true,
-    errors: null
+    errors: null,
   });
 
   const [stepsCount, dispatchSteps] = useReducer(stepReducer, {
@@ -30,7 +30,6 @@ const Calculator = () => {
     isDisabledPrev: false,
     steps: 1,
   });
- 
 
   useEffect(() => {
     if (stepsCount.steps === 6) {
@@ -43,12 +42,12 @@ const Calculator = () => {
       dispatchSteps({ type: "enableButtons" });
     }
 
-    if(state.phone.match(regex) && state.phone.length > 10) {
+    if (state.phone.match(regex) && state.phone.length > 10) {
       dispatch({ type: "enableCalculatorSendButton" });
     } else {
       dispatch({ type: "disableCalculatorSendButton" });
     }
-  
+
     if (state.isReady) {
       const converted = convertStateIntoString(state);
       dispatch({ type: "disableCalculatorSendButton" });

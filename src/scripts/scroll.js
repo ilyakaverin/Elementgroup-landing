@@ -20,10 +20,6 @@ export default () => {
   const topButton = document.querySelector(".arrow-up");
   const scrollToCalculator = document.querySelector(".arrow-down");
 
-
-
- 
-
   window.onscroll = function () {
     scrollFunction(topButton);
   };

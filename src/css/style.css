@@ -2,7 +2,6 @@
 @import "./keyframes.css";
 @import "./animations.css";
 @import "./header.css";
-@import "./main.css";
 @import "./benefits.css";
 @import "./carousel.css";
 @import "./accordeon.css";
@@ -17,11 +16,11 @@
 }
 
 :root {
-  --color-day: hsla(228, 6%, 16%, 1);
-  --color-night: hsla(0, 0%, 87%, 1);
-  --color-day-transparent: hsla(228, 6%, 16%, 0.7);
-  --color-bg-day: hsla(0, 0%, 100%, 1);
-  --color-night-transparent: hsla(0, 0%, 87%, 0.7);
+  --color-day: hsla(228, 6%, 16%, 1); /*day */
+  --color-night: hsla(0, 0%, 87%, 1); /*night */
+  --color-day-transparent: hsla(228, 6%, 16%, 0.7); /*day transparent */
+  --color-bg-day: hsla(0, 0%, 100%, 1); /*day white */
+  --color-night-transparent: hsla(0, 0%, 87%, 0.7); /*night-transparent */
   font-family: "Fira sans";
 }
 body {
@@ -85,13 +84,12 @@ a:hover {
   transform: translateY(10%);
 }
 .cookies img {
-  width: 40px
+  width: 40px;
 }
 .nav__privacy {
   background-color: var(--color-day);
   display: flex;
   justify-content: center;
-  
 }
 .nav__privacy a {
   color: var(--color-bg-day);

@@ -13,12 +13,11 @@ export default () => {
   if (!localStorage.getItem("wasHere")) {
     const cookieClose = document.querySelector(".cookies > button");
 
-    cookieClose.addEventListener('click', () => {
-      cookieNotice.remove()
-    })
+    cookieClose.addEventListener("click", () => {
+      cookieNotice.remove();
+    });
     localStorage.setItem("wasHere", cookie);
-
   } else {
-    cookieNotice.remove()
+    cookieNotice.remove();
   }
 };

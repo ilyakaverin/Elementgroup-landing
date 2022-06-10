@@ -17,7 +17,7 @@ export default () => {
         observer.loading = false;
       } catch (e) {
         observer.loading = false;
-        console.log('check your network')
+        console.log("check your network");
       }
     }
 
@@ -39,9 +39,9 @@ export default () => {
       const button = form.querySelector("button");
       observer.currentButton = button;
       const inputData = new FormData(e.target);
-      const phone = inputData.get('phone')
+      const phone = inputData.get("phone");
       observer.loading = true;
-      observer.data = { data: phone};
+      observer.data = { data: phone };
     });
   });
 };

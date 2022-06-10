@@ -194,9 +194,8 @@ header {
   }
   .heading-container h1 {
     flex-direction: column;
-    
   }
-  .heading-container .heading-container-inner  h1 {
+  .heading-container .heading-container-inner h1 {
     font-size: 2rem;
     line-height: normal;
   }

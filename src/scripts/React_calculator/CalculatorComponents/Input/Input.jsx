@@ -14,7 +14,7 @@ const Input = ({
   minLength,
   maxLength,
   min,
-  max
+  max,
 }) => {
   function handleInput(e) {
     click && click({ type: action, value: e.target.value });
