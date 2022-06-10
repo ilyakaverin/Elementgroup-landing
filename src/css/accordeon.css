@@ -32,6 +32,9 @@
   width: 100%;
   overflow: hidden;
 }
+.tab ol, .tab ul {
+  margin: 0
+}
 .tab-label {
   display: flex;
   justify-content: space-between;

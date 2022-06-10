@@ -12,7 +12,6 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background: url("../assets/bg.jpg") no-repeat;
   object-fit: contain;
   filter: blur(5px);
 }
@@ -184,14 +183,31 @@ header {
   }
   .heading-container .heading-container-inner h1 {
     font-size: 3rem;
-    line-height: 3.5rem;
+    line-height: 2.7rem;
     margin: 1rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1279px) {
+  .heading-contact-container {
+    margin: 1rem;
+    margin-bottom: 0;
+  }
+  .heading-container h1 {
+    flex-direction: column;
+    
+  }
+  .heading-container .heading-container-inner  h1 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+  .heading-container p {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
   .heading-container-inner {
     max-width: 100%;
     margin: 1rem;
+    margin-top: 0;
   }
 }
 @media (max-width: 1279px) {

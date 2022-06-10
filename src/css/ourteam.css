@@ -11,6 +11,7 @@
     display: flex;
     gap: 1rem;
     justify-content: space-between;
+   
   }
   .main-ourTeam-container-inner .main-ourTeam-card {
     display: flex;
@@ -46,13 +47,14 @@
     bottom: 2%;
     left: 1%;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     .main-ourTeam-container-inner {
       margin: 1rem;
     }
     .main-ourTeam-cards {
       align-items: center;
-      gap: 0.3rem
+      gap: 0.3rem;
+
     }
     .main-ourTeam-cards .main-ourTeam-card {
       flex-basis: 33%;

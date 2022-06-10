@@ -74,7 +74,7 @@
 }
 #slider #slider-full .slide span {
   font-size: 3em;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: var(--color-night-transparent);
   position: relative;
   left: 10%;
@@ -101,7 +101,7 @@
   background-size: cover;
 }
 #slider .slide-five {
-  background-image: url("../assets/bg.jpg");
+  background-image: url("../assets/gal6.webp");
 }
 #slider .slide-six {
   background-image: url("../assets/gal2.webp");
@@ -115,9 +115,7 @@
   position: absolute;
   bottom: 0;
   left: 10%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
 }
 #slider #slider-thumb label {
   color: var(--color-night);
@@ -145,7 +143,7 @@
   background-image: url("../assets/gal1.webp");
 }
 #slider #slider-thumb label[for="slide-5"] {
-  background-image: url("../assets/bg.jpg");
+  background-image: url("../assets/gal6.webp");
 }
 #slider #slider-thumb label[for="slide-6"] {
   background-image: url("../assets/gal2.webp");
@@ -200,25 +198,26 @@
   transition: all 0.3s ease-out;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 768px) {
   #slider {
     height: 230px;
   }
   #slider #slider-thumb label {
     width: 59px;
+    border-radius: 10px;
   }
   #slider #slider-full .slide span {
     top: 5%;
     left: 5%;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #slider #slider-thumb {
     height: 70px;
-    left: 5%;
+    left: 1%;
     bottom: -25%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
   
     
   }
