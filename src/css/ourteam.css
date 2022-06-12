@@ -10,8 +10,7 @@
 .main-ourTeam-cards {
   display: flex;
   justify-content: space-between;
-  gap: 1vw
-  
+  gap: 1vw;
 }
 .main-ourTeam-container-inner .main-ourTeam-card {
   display: flex;
