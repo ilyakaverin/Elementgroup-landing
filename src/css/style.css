@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Fira sans";
   src: url("../../public/fonts/FiraSansCondensed-Regular.woff2"),
-    url("../../public/fonts/FiraSansCondensed-Regular.ttf");
+       url("../../public/fonts/FiraSansCondensed-Regular.ttf");
   font-display: swap;
 }
 
