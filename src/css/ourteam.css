@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   gap: 1vw;
+
 }
 .main-ourTeam-container-inner .main-ourTeam-card {
   display: flex;
@@ -67,4 +68,14 @@
   .main-ourTeam-container-inner .main-ourTeam-card span {
     font-size: 0.7rem;
   }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .main-ourTeam-cards {
+       flex-wrap: wrap;
+      }
+      .main-ourTeam-cards img {
+          height: 350px;
+      }
+
 }

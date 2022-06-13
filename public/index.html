@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,11 +39,10 @@
   <body>
     <header>
       <video autoplay muted loop id="myVideo">
-        <!-- <source src="../src/assets/vid.mp4" type="video/mp4" /> -->
         <source src="../src/assets/vid-unp.mp4" type="video/mp4" />
       </video>
-      <section class="heading-overvideo-content">
-        <section class="heading-contact-container animated animation-0">
+      <div class="heading-overvideo-content">
+        <div class="heading-contact-container animated animation-0">
           <div class="heading-contact-inner-container">
             <picture class="logo">
               <img
@@ -56,8 +55,8 @@
               <a href="mailto:element.nvrsk@mail.ru">elementgroup.pro@mail.ru</a>
             </div>
           </div>
-        </section>
-        <section class="heading-container animated animation-1">
+        </div>
+        <div class="heading-container animated animation-1">
           <div class="heading-container-inner">
             <h1>Дистанционный ремонт квартир</h1>
             <p class="heading-container-description">
@@ -68,7 +67,7 @@
               отслеживать весь процесс в режиме онлайн.
             </p>
           </div>
-          <section>
+          <div>
             <form id="headerForm" class="phoneForm">
               <input
                 type="tel"
@@ -85,13 +84,13 @@
               </button>
             </form>
             <button class="arrow-down animated animation-2">Рассчитать стоимость ремонта</button>
-          </section>
+          </div>
 
-        </section>
-      </section>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="main-content-benefits">
+      <div class="main-content-benefits">
         <div class="main-content-benefits-inner">
           <h2>Наши преимущества</h2>
           <div class="main-content-benefits-inner-grid-container">
@@ -155,87 +154,169 @@
 
           </div>
         </div>
-      </section>
-      <section class="main-content-gallery-container">
+      </div>
+      <div class="main-content-gallery-container">
         <div class="main-content-gallery-inner-container">
           <h2>Наши работы</h2>
-          <div id="slider">
-            <div id="div">
-              <input id="slide-1" type="radio" name="slides" checked>
-              <input id="slide-2" type="radio" name="slides">
-              <input id="slide-3" type="radio" name="slides">
-              <input id="slide-4" type="radio" name="slides">
-              <input id="slide-5" type="radio" name="slides">
-              <input id="slide-6" type="radio" name="slides">
-              
-              <div id="slider-full">
-             
-                <div class="slide slide-one">
-                  <span>Рабочий кабинет</span>
-                </div>
+
+          <div class="main-content-gallery-wrap">
+            <img src="../src/assets/gal1.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal2.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal3.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal4.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal5.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal6.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal7.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal8.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal9.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal10.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal11.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal12.webp" alt="gallery" lazy />
+          <img src="../src/assets/gal13.webp" alt="gallery" lazy />
+
+          </div>
           
-                <div class="slide slide-two">
-                  <span>Зал</span>
-                </div>
-                
-                <div class="slide slide-three">
-                  <span>Коридор</span>
-                  
-                </div>
-                <div class="slide slide-four">
-                  <span>Зал</span>
-                  
-                </div>
-                <div class="slide slide-five">
-                  <span>Игровая комната</span>
-                </div>
-                <div class="slide slide-six">
-                  <span>Коридор</span>
-                 
-                </div>     
-              </div>   
-            </div>
-            <div id="slider-thumb">
-              <label for="slide-1"><p>Рабочий кабинет</p></label>
-              <label for="slide-2"><p>Зал</p></label>
-              <label for="slide-3"><p>Коридор</p></label>
-              <label for="slide-4"><p>Зал</p></label>
-              <label for="slide-5"><p>Игровая комната</p></label>
-              <label for="slide-6"><p>Еще Коридор</p></label>
-            </div>
+          
           </div>
         </div>
-      </section>
-      <section class="calculator" id="calculator"></section>
-      <section class="main-ourTeam-container">
+        <div class="main-price-container">
+          <div class="main-price-container-inner">
+            <h2>Стоимость ремонта</h2>
+            <h3>В качества примера: возьмем квартиру площадью 80м<sup>2</sup></h3>
+            <div class="main-price-container-inner-cards">
+              <div class="main-price-container-inner-card">
+                <h3>Стандартный ремонт</h3>
+                <ol>
+                  <li>Полы
+                    <ul>
+                      <li>Стяжка</li>
+                      <li>Ламинат</li>
+                      <li>Пластиковый плинтус</li>
+                    </ul>
+                  </li>
+                  <li>Стены
+                    <ul>
+                      <li>Штукатурка</li>
+                      <li>Шпаклевка</li>
+                      <li>Обои</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Окна
+                    <ul>
+                      <li>Откосы</li>
+                      <li>Подоконники пластиковые</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Санузел
+                    <ul>
+                      <li>Стандартная плитка</li>
+                    </ul>
+                  </li>
+                  <li>Потолки
+                    <ul>
+                      <li>Натяжные</li>
+                    </ul>
+                  </li>
+                  <li>Стандартный монтаж
+                    <ul>
+                      <li>Электрика</li>
+                      <li>Водопровод</li>
+                      <li>Канализация</li>
+                    </ul>
+                  </li>
+                </ol>
+                <p>Примерная общая стоимость работ, включая материал: <span>2 040 000</span> ₽</p>
+                <p>Срок выполнения работ: около 4-х месяцев</p>
+              </div>
+              <div class="main-price-container-inner-card">
+                <h3>Дизайнерский ремонт</h3>
+                <ol>
+                  <li>Полы
+                    <ul>
+                      <li>Стяжка</li>
+                      <li>Наливной пол</li>
+                      <li>Паркетная доска</li>
+                      <li>МДФ плинтус</li>
+                    </ul>
+                  </li>
+                  <li>Стены
+                    <ul>
+                      <li>Кладка газоблока</li>
+                      <li>Штукатурка</li>
+                      <li>Шпаклевка стартовая</li>
+                      <li>Стеклохолст</li>
+                      <li>Финишная шпаклевка</li>
+                      <li>Покраска</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Окна
+                    <ul>
+                      <li>Откосы под покраску</li>
+                      <li>Подготовка основания под деревянный или каменный подоконник</li>
+                    </ul>
+                  </li>
+                  <li>
+                     2 санузла
+                    <ul>
+                      <li>Нестандартная плитка</li>
+                    </ul>
+                  </li>
+                  <li>Потолки
+                    <ul>
+                      <li>гипсокартон под покраску</li>
+                    </ul>
+                  </li>
+                  <li>Премиум монтаж
+                    <ul>
+                      <li>Электрика</li>
+                      <li>Водопровод</li>
+                      <li>Канализация</li>
+                    </ul>
+                  </li>
+                </ol>
+                <p>Примерная общая стоимость работ, включая материал: <span>3 400 000</span> ₽ </p>
+                <p>Срок выполнения работ: около 7 месяцев</p>
+              </div>
+
+            </div>
+            <p>PS: звукоизоляция, переварка стояков, климат, двери, окна и др. работы являются дополнительными и увеличивают стоимость ремонта.</p>
+           
+          </div>
+        </div>
+
+      <div class="calculator" id="calculator"></div>
+      <div class="main-ourTeam-container">
         <div class="main-ourTeam-container-inner">
           <h2>Наша команда единомышленников</h2>
           <div class="main-ourTeam-cards">
             <div class="main-ourTeam-card">
-              <img src="../src/assets/director.webp" alt="Гендир">
+              <img src="../src/assets/director.webp" alt="Гендир" lazy>
               <a class="social" href="https://vk.com/aleksandrov__group"><img  src="../src/assets/vk.svg" alt="vkontakte"></a>
               <span>Алексей</span>
             </div>
             <div class="main-ourTeam-card">
-              <img src="../src/assets/employee1.webp" alt="Сотрудник">
+              <img src="../src/assets/employee1.webp" alt="Сотрудник" lazy>
               <a class="social" href="https://vk.com/renenovoross"><img  src="../src/assets/vk.svg" alt="vkontakte"></a>
               <span>Михаил</span>
             </div>
             <div class="main-ourTeam-card">
-              <img src="../src/assets/employee2.webp" alt="Чепушила">
-              <a class="social" href="https://vk.com/tim_angel"><img  src="../src/assets/vk.svg" alt="vkontakte"></a>
+              <img src="../src/assets/employee2.webp" alt="Сотрудник" lazy>
+              <a class="social" href="https://vk.com/tim_angel"><img  src="../src/assets/vk.svg" alt="vkontakte" lazy /></a>
               <span>Тимур</span>
             </div>
             <div class="main-ourTeam-card">
-              <img src="../src/assets/employee3.webp" alt="Сотрудник">
-              <a class="social" href="https://vk.com/id83913767"><img  src="../src/assets/vk.svg" alt="vkontakte"></a>
+              <img src="../src/assets/employee3.webp" alt="Сотрудник" lazy>
+              <a class="social" href="https://vk.com/id83913767"><img  src="../src/assets/vk.svg" alt="vkontakte" lazy></a>
               <span>Роман</span>
             </div>
 
           </div>
         </div>
-      </section>
-      <section class="main-faq-container">
+      </div>
+      <div class="main-faq-container">
         <h2>Часто задаваемые вопросы</h2>
         <div class="row">
           <div class="col">
@@ -284,10 +365,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
-      <section class="footer-inner-container">
+      <div class="footer-inner-container">
         <div class="footer-row">
           <a href="/" class="footer-logo">
             <img src="../src/assets/logo_RGB_white.png" alt="" />
@@ -337,7 +418,7 @@
             
           </div>
         </div>
-      </section>
+      </div>
     </footer>
     <button class="arrow-up"></button>
     <aside class="cookies animation-2">

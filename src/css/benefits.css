@@ -25,6 +25,7 @@
   color: var(--color-day);
   background-color: var(--color-bg-day);
   border-radius: 5px;
+  background-repeat: no-repeat;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -35,31 +36,52 @@
 .main-content-benefits .a {
   grid-column: 1;
   grid-row: 1;
+  background-image: url('../assets/quality.svg');
+  background-size: 15%;
+  background-position: 95% 20%;
 }
 .main-content-benefits .b {
   grid-column: 2;
   grid-row: 1;
+  background-image: url('../assets/transparency.svg');
+  background-size: 15%;
+  background-position: 95% 20%;
 }
 .main-content-benefits .c {
   grid-column: 1 / 3;
   grid-row: 2;
+  background-image: url('../assets/report.svg');
+  background-size: 9%;
+  background-position: 95% 25%;
+ 
 }
 .main-content-benefits .d {
   grid-column: 3;
   grid-row: 1 / 3;
+  background-image: url('../assets/worker.svg');
+  background-size: 25%;
+  background-position: center 90%;
 }
 .main-content-benefits .e {
   grid-column: 4;
   grid-row: 1;
+  background-image: url('../assets/price.svg');
+  background-size: 15%;
+  background-position: center 90%;
 }
 .main-content-benefits .f {
   grid-column: 4;
   grid-row: 2;
+  background-image: url('../assets/webcam.svg');
+  background-size: 15%;
+  background-position: 95% 25%;
 }
 .main-content-benefits .g {
   grid-column: 1 / 5;
   grid-row: 3;
-  background-image: none;
+  background-image: url('../assets/calendar.svg');
+  background-size: 4%;
+  background-position: 99% 35%;
 }
 
 @media (max-width: 768px) {
@@ -98,7 +120,6 @@
     scroll-snap-align: start;
     transform-origin: center center;
     transform: scale(1);
-    transition: transform 0.5s;
     position: relative;
     display: flex;
     flex-direction: column;

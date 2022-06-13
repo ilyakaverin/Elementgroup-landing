@@ -1,0 +1,57 @@
+
+.main-price-container {
+    background: var(--color-day);
+    color: var(--color-night)
+}
+.main-price-container-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+.main-price-container-inner-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.main-price-container-inner-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.main-price-container-inner-card ul > li {
+
+    list-style: none;
+    position: relative;
+    margin-bottom: 0;
+}
+.main-price-container-inner-card ul > li:first-child {
+    margin-top: 0.5rem;
+}
+.main-price-container-inner-card ul > li:last-child {
+
+    margin-bottom: 0.5rem;
+}
+.main-price-container-inner-card ul li:before {
+
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -25px;
+    background-image: url('../assets/checked-svgrepo-com.svg');
+    background-color: white;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+.main-price-container-inner p > span {
+    text-decoration: underline;
+}
+
+@media(max-width: 468px) {
+
+    .main-price-container-inner {
+        margin: 1rem
+    }
+}
