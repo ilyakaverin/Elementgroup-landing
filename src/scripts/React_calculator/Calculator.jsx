@@ -28,17 +28,25 @@ const Calculator = () => {
   const [stepsCount, dispatchSteps] = useReducer(stepReducer, {
     isDisabledNext: false,
     isDisabledPrev: false,
-    steps: 1,
+    steps: 0,
   });
+  const componentArray = [
+    <FirstStep dispatch={dispatch} action="FirstStep" value={state.type}/>,
+    <SecondStep dispatch={dispatch} action="SecondStep" value={state.design}/>,
+    <ThirdStep dispatch={dispatch} action="ThirdStep" value={state.area}/>,
+    <FourthStep dispatch={dispatch} action="FourthStep" value={state.budget}/>,
+    <FifthStep dispatch={dispatch} action="FifthStep" value={state.rooms}/>,
+    <FinalStep dispatch={dispatch} action="FinalStep" value={state} />
+    ]
 
   useEffect(() => {
-    if (stepsCount.steps === 6) {
+    if (stepsCount.steps === componentArray.length - 1) {
       dispatchSteps({ type: "disableNext" });
     }
-    if (stepsCount.steps === 1) {
+    if (stepsCount.steps === 0) {
       dispatchSteps({ type: "disablePrev" });
     }
-    if (stepsCount.steps !== 1 && stepsCount.steps !== 6) {
+    if (stepsCount.steps !== 0 && stepsCount.steps !== componentArray.length - 1) {
       dispatchSteps({ type: "enableButtons" });
     }
 
@@ -63,60 +71,15 @@ const Calculator = () => {
     }
   }, [stepsCount.steps, state.isReady, state.phone]);
 
-  function switchComponents(step) {
-    switch (step) {
-      case 1:
-        return (
-          <FirstStep
-            dispatch={dispatch}
-            action="FirstStep"
-            value={state.type}
-          />
-        );
-      case 2:
-        return (
-          <SecondStep
-            dispatch={dispatch}
-            action="SecondStep"
-            value={state.design}
-          />
-        );
-      case 3:
-        return (
-          <ThirdStep
-            dispatch={dispatch}
-            action="ThirdStep"
-            value={state.area}
-          />
-        );
-      case 4:
-        return (
-          <FifthStep
-            dispatch={dispatch}
-            action="FifthStep"
-            value={state.rooms}
-          />
-        );
-      case 5:
-        return (
-          <FourthStep
-            dispatch={dispatch}
-            action="FourthStep"
-            value={state.budget}
-          />
-        );
-      case 6:
-        return (
-          <FinalStep dispatch={dispatch} action="FinalStep" value={state} />
-        );
-    }
-  }
+  
+
+  
 
   return (
     <div className={style.calculator_inner_container}>
       <h2>Рассчитайте стоимость ремонта!</h2>
       <div className={style.stepContainer}>
-        {switchComponents(stepsCount.steps)}
+        {componentArray[stepsCount.steps]}
       </div>
       <div className={style.buttonsContainer}>
         <Button
@@ -132,7 +95,7 @@ const Calculator = () => {
           name="Назад"
         />
       </div>
-      <p>Шаг {stepsCount.steps} из 6</p>
+      <p>Шаг {stepsCount.steps + 1} из 6</p>
     </div>
   );
 };
