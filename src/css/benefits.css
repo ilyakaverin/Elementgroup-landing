@@ -9,6 +9,7 @@
 .main-content-benefits-inner {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .main-content-benefits-inner-grid {
@@ -112,7 +113,7 @@
   right: 5%;
   width: 45px;
   height: 45px;
-  background-image: url('../assets/recipe.svg');
+  background-image: url('../assets/demonstration.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -142,7 +143,7 @@
   right: 2%;
   width: 40px;
   height: 40px;
-  background-image: url('../assets/demonstration.svg');
+  background-image: url('../assets/recipe.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -195,7 +196,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 2500px;
   }
   .main-content-benefits-inner::-webkit-scrollbar {
     width: 10px;
@@ -228,7 +228,7 @@
     z-index: 2;
   }
   .main-content-benefits-inner-grid .box.c {
-    top: 290px;
+    top: 305px;
     order: 5;
     z-index: 5;
   }
@@ -238,7 +238,6 @@
     order: 4;
     z-index: 4;
   }
-    
   .main-content-benefits-inner-grid .box.e {
     top: 155px;
     order: 3;
@@ -251,7 +250,7 @@
   }
   
   .main-content-benefits-inner-grid .box.g {
-    top: 450px;
+    top: 435px;
     order: 7;
     z-index: 7;
   }
