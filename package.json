@@ -25,6 +25,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
+    "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "on-change": "^4.0.1",
     "react": "^18.1.0",

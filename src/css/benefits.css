@@ -244,7 +244,7 @@
     z-index: 3;
   }
   .main-content-benefits-inner-grid .box.f {
-    top: 360px;
+    top: 370px;
     order: 6;
     z-index: 6;
   }
@@ -253,9 +253,6 @@
     top: 435px;
     order: 7;
     z-index: 7;
-  }
-  .main-content-benefits-inner-grid .box.g h3 {
-   white-space: wrap;
   }
   .main-content-benefits-inner-grid .box.h {
     top: 180px;

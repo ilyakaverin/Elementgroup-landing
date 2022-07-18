@@ -33,11 +33,16 @@ background-color: #FCCA00;
 
 .main-content-101-inner-container img {
     max-width: 30vw;
+
 }
 @media (max-width: 468px) {
     .main-content-101-wrapper {
         margin: 1rem;
         margin-bottom: 0;
+    }
+    .main-content-101-inner-container img {
+        margin: 0 auto;
+        max-width: 50vw;
     }
     .main-content-101-inner-container  h2 {
         margin: 1rem;
