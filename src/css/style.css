@@ -4,6 +4,7 @@
 @import "./benefits.css";
 @import "./101.css";
 @import "./gallery.css";
+@import "./start.css";
 @import "./price.css";
 @import "./accordeon.css";
 @import "./footer.css";
@@ -23,6 +24,7 @@
   --color-day-transparent: hsla(228, 6%, 16%, 0.7); /*day transparent */
   --color-bg-day: hsla(0, 0%, 100%, 1); /*day white */
   --color-night-transparent: hsla(0, 0%, 87%, 0.7); /*night-transparent */
+  --color-orange: #FCCA00;
   font-family: "Fira sans";
 }
 body {
@@ -88,7 +90,40 @@ a:hover {
   color: var(--color-bg-day);
   padding: 1rem;
 }
+.main-price-consultation {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+ 
+
+}
+.main-price-consultation form {
+  align-self: center;
+}
+.main-price-consultation h2 {
+  display: block
+}
 @media (max-width: 768px) {
+  .main-price-consultation {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-price-consultation h2 {
+    display: block
+  }
+  .main-price-container-inner-cards {
+    flex-direction: column;
+  }
+  .main-price-container-inner-card {
+    gap: 5vw
+  }
+  .main-price-container-inner-card span {
+    font-size: 2rem;
+  }
   h2 {
     font-size: 2rem;
   }

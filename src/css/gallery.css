@@ -1,16 +1,23 @@
 .main-content-gallery-inner-container {
   max-width: 1200px;
-  margin: 1rem auto;
+  margin: 0rem auto;
   position: relative;
+ 
 
-
+}
+.main-content-gallery-container {
+  margin-bottom: 1rem;
 }
 .image {
   display: block;
   width: 100%;
   overflow: hidden;
   position: relative;
-  border-radius: 10px;
+  margin-bottom: -5px;
+  border-radius: 15px;
+}
+.wrapper {
+  margin-bottom: 0;
 }
 .image span {
   position: absolute;
@@ -18,11 +25,11 @@
   top: 5%;
   background-color: #adb5bd;
   padding: 15px;
-  border-radius: 10px;
 }
 .slide {
   object-fit: cover;
   max-width: 100%;
+  
 }
 
 /* button  */
@@ -62,4 +69,10 @@
 #left:hover, #right:hover {
   opacity: 0.8;
   transition: ease 0.5s;
+}
+
+@media(max-width: 468px) {
+  .main-content-gallery-inner-container {
+    margin: 1rem;
+}
 }

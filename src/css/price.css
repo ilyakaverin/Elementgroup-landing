@@ -1,24 +1,59 @@
 
 .main-price-container {
-    background: var(--color-day);
     color: var(--color-night);
 }
 .main-price-container-inner {
     max-width: 1200px;
     margin: 0 auto;
+    background: var(--color-day);
+    border-radius: 10px;
     border: 1px solid transparent;
+    padding: 10px;
+    margin-bottom: 1rem
+}
+.main-price-container-inner h2 {
+    text-align: center;
 }
 .main-price-container-inner-cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.5rem
+    justify-content: center;
+    gap: 0.5rem;
+    gap: 5vw;
+    margin-bottom: 2rem;
     
 }
 .main-price-container-inner-card {
     border: 2px solid var(--color-night);
     border-radius: 10px;
-    padding: 1rem
+    padding: 1rem;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vw
+}
+.main-price-container-inner-card:last-child {
+    background-color: var(--color-orange);
+    border: 2px solid var(--color-night);
+    color: var(--color-day)
+}
+.main-price-container-inner-card:last-child button {
+    background-color: var(--color-bg-day);
+}
+.main-price-container-inner-card button {
+    background-color: #FCCA00;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main-price-container-inner-card span {
+    text-align: center;
+    font-size: 2rem;
+}
+.main-price-container-inner-card h3 {
+    text-align: center;
 }
 .main-price-container-inner-card ul {
     display: flex;
@@ -36,7 +71,6 @@
     margin-top: 0.5rem;
 }
 .main-price-container-inner-card ul > li:last-child {
-
     margin-bottom: 0.5rem;
 }
 .main-price-container-inner-card ul li:before {
@@ -62,7 +96,11 @@
 
 @media(max-width: 468px) {
 
-    .main-price-container-inner {
-        margin: 1rem
+
+    .main-price-container-inner-cards {
+        justify-content: flex-start;
+    }
+    .main-price-container-inner-card span {
+        font-size: 1rem;
     }
 }
