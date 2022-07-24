@@ -1,9 +1,7 @@
 .firstStep__Container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: fit-content;
+  gap: 1vw
 }
 .firstStep__Form {
   display: flex;
@@ -20,9 +18,10 @@
   border-radius: 5px;
   color: var(--color-day);
 }
-@media (max-width: 468px) {
+@media (max-width: 768px) {
   .firstStep__Container {
     flex-direction: column;
+    align-items: center;
   }
   .firstStep__Container p {
     max-width: 90%;

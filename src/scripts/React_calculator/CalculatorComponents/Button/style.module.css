@@ -1,11 +1,11 @@
 .button {
   background: transparent;
-  border: 2px solid var(--color-night);
+  border: 2px solid black;  /* var(--color-night); */
   outline: 0;
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: 5px;
-  color: var(--color-night);
+  color: var(--color-day);
   cursor: pointer;
 }
 .button:active {

@@ -4,6 +4,7 @@
   width: 30%;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 .finalStep__Container h3 {
   text-align: center;

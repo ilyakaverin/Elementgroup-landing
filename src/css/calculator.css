@@ -1,7 +1,6 @@
 .calculator {
   background-color: var(--color-day);
-  color: var(--color-night);
-}
-.stepContainer {
-  height: 50vh;
+  color: black  /* var(--color-night); */;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

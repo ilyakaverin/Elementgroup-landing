@@ -34,7 +34,6 @@ const Calculator = () => {
     <FirstStep dispatch={dispatch} action="FirstStep" value={state.type}/>,
     <SecondStep dispatch={dispatch} action="SecondStep" value={state.design}/>,
     <ThirdStep dispatch={dispatch} action="ThirdStep" value={state.area}/>,
-    <FourthStep dispatch={dispatch} action="FourthStep" value={state.budget}/>,
     <FifthStep dispatch={dispatch} action="FifthStep" value={state.rooms}/>,
     <FinalStep dispatch={dispatch} action="FinalStep" value={state} />
     ]
@@ -95,7 +94,7 @@ const Calculator = () => {
           name="Назад"
         />
       </div>
-      <p>Шаг {stepsCount.steps + 1} из 6</p>
+      <p>Шаг {stepsCount.steps + 1} из {componentArray.length}</p>
     </div>
   );
 };

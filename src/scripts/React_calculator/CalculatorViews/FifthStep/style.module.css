@@ -1,15 +1,20 @@
-.fifthStep__Container label {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 1rem;
-  text-align: center;
-}
 .fifthStep__Container {
   display: flex;
   gap: 0.5rem;
   height: fit-content;
   flex-direction: column;
-  max-width: 30%;
+  align-items: center;
+}
+.fifthStep__Form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.fifthStep__Form label {
+  border: 1px solid var(--color-day);
+  padding: 1vw;
+  border-radius: 5px;
 }
 
 .fifthStep__Container p {

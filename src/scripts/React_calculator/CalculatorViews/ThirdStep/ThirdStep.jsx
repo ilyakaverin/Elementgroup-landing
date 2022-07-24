@@ -10,7 +10,7 @@ const ThirdStep = ({ dispatch, action, value }) => {
         <Input
           type="range"
           min="1"
-          max="200"
+          max="1000"
           label="Площадь помещения"
           click={dispatch}
           action={action}

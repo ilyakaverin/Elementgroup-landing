@@ -1,7 +1,5 @@
 .stepContainer {
-  min-height: 350px;
-  display: flex;
-  justify-content: center;
+  min-height: 360px;
 }
 .calculator_inner_container {
   max-width: 1200px;
@@ -9,8 +7,9 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border: 1px solid transparent;
-  padding-top: 2rem;
+  border: 2px solid var(--color-bg-day);
+  border-radius: 10px;
+  background-color: var(--color-bg-day);
 }
 .buttonsContainer {
   max-width: 50%;

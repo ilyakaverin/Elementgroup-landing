@@ -4,7 +4,7 @@ export const convertStateIntoString = (state) => {
     "Нужен дизайн-проект": state.design,
     "Площадь помещения": `${state.area} кв. м`,
     Бюджет: `${state.budget} тысяч рублей`,
-    "Количество комнат": state.rooms,
+    "Когда начать ремонт": state.rooms,
     "Номер телефона": state.phone,
   };
   const convertedIntoString = JSON.stringify(renameKeys, null, 2);

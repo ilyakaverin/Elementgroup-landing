@@ -34,6 +34,15 @@ const FirstStep = ({ dispatch, action, value }) => {
           action={action}
           isChecked={value}
         />
+        <Input
+          type="radio"
+          name="radio1"
+          value="Частный дом"
+          label="Частный дом"
+          click={dispatch}
+          action={action}
+          isChecked={value}
+        />
       </form>
       <p>
         Тип жилья влияет на срок ремонта. Во вторичном жилье почти всегда
