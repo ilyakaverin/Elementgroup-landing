@@ -29,6 +29,7 @@
   .fifthStep__Container {
     flex-direction: column;
     max-width: 70%;
+    margin: 0 auto;
   }
   .fifthStep__Container p {
     max-width: 90%;

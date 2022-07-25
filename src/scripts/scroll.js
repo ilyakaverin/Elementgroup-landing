@@ -18,7 +18,9 @@ export const scrollTo = (topValue = 0, bottomValue) => {
 
 export default () => {
   const topButton = document.querySelector(".arrow-up");
-  const scrollToCalculator = document.querySelector(".arrow-down");
+  const scrollToCalculator = document.querySelector(".calc");
+  const scrollToOffer = document.querySelector(".offers");
+  const scrollToFaq = document.querySelector(".faq");
 
   window.onscroll = function () {
     scrollFunction(topButton);
@@ -32,4 +34,20 @@ export default () => {
     const osY = position.top;
     scrollTo(osY, osX);
   });
+  scrollToOffer.addEventListener("click", () => {
+    const element = document.querySelector(".main-price-container");
+    const position = element.getBoundingClientRect();
+    const osX = position.left;
+    const osY = position.top;
+    scrollTo(osY, osX);
+
+  })
+  scrollToFaq.addEventListener("click", () => {
+    const element = document.querySelector(".main-faq-container");
+    const position = element.getBoundingClientRect();
+    const osX = position.left;
+    const osY = position.top;
+    scrollTo(osY, osX);
+
+  })
 };

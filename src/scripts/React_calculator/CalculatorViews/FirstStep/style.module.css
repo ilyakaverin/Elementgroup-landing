@@ -9,6 +9,11 @@
   gap: 1rem;
   margin-bottom: 2rem;
 }
+.firstStep__Form label {
+  border: 1px solid var(--color-day);
+  padding: 1vw;
+  border-radius: 5px;
+}
 
 .firstStep__Container p {
   max-width: 30%;

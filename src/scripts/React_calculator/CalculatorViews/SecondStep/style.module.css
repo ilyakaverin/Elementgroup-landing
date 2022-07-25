@@ -6,7 +6,6 @@
 .secondStep__Container {
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 .secondStep__Container p {
@@ -20,5 +19,6 @@
   .secondStep__Container {
     flex-direction: column;
     max-width: 50%;
+    margin: 0 auto;
   }
 }

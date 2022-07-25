@@ -16,7 +16,7 @@ header {
 
 }
 
-.arrow-down {
+.scrollbutton {
   color: var(--color-day);
   background-color: var(--color-night-transparent);
   padding: 1rem;
@@ -26,6 +26,7 @@ header {
   cursor: pointer;
   width: 100%;
   font-size: 1.3rem;
+  margin-bottom: 1vw;
 }
 
 .heading-container {
@@ -36,6 +37,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
+  gap: 1vw;
 }
 .heading-container p {
   max-width: 80%;
@@ -138,6 +140,9 @@ header {
 }
 
 @media (max-width: 768px) {
+  header {
+    min-height: 120vh;
+  }
   .heading-container {
     max-width: revert;
     margin: 1rem;
