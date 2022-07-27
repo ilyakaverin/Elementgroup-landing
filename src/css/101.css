@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     border: 1px solid transparent;
-    background-color: #FCCA00;
+    background-color: var(--color-orange);
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1vw;
