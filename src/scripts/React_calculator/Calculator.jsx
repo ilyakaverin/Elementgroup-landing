@@ -70,10 +70,6 @@ const Calculator = () => {
     }
   }, [stepsCount.steps, state.isReady, state.phone]);
 
-  
-
-  
-
   return (
     <div className={style.calculator_inner_container}>
       <h2>Рассчитайте стоимость ремонта!</h2>
