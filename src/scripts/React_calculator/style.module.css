@@ -1,5 +1,6 @@
 .stepContainer {
   min-height: 370px;
+  
 }
 .calculator_inner_container {
   max-width: 1200px;
@@ -10,6 +11,7 @@
   border: 2px solid var(--color-bg-day);
   border-radius: 10px;
   background-color: var(--color-bg-day);
+
 }
 .buttonsContainer {
   max-width: 50%;

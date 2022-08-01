@@ -52,6 +52,11 @@
     <title>Ремонт квартир и домов в Новороссийске</title>
   </head>
   <body>
+    <div class="modal__root">
+      <div class="modal">
+        <h1>hello</h1>
+      </div>
+    </div>
     <header>
       <video autoplay muted loop id="myVideo">
         <source src="../src/assets/vid-unp.mp4" type="video/mp4" />
@@ -98,9 +103,12 @@
                 Получить консультацию
               </button>
             </form>
-            <button class="calc scrollbutton animated animation-2">Рассчитать стоимость ремонта</button>
-            <button class="offers scrollbutton animated animation-2">Пакетные предложения</button>
-            <button class="faq scrollbutton animated animation-2">Часто задаваемые вопросы</button>
+            <div class="menu animated animation-2">
+              <button class="calc scrollbutton">Рассчитать стоимость ремонта</button>
+              <button class="offers scrollbutton">Пакетные предложения</button>
+              <button class="faq scrollbutton">Часто задаваемые вопросы</button>
+            </div>
+
           </div>
 
         </div>
@@ -204,17 +212,17 @@
             <div class="main-price-container-inner-card">
               <h3>Доступный</h3>
               <span>От 7000 ₽ кв<sup>2</sup> м</span>
-              <button>Подробнее</button>
+              <button data-target="1">Подробнее</button>
             </div>
             <div class="main-price-container-inner-card">
               <h3>Комфорт</h3>
               <span>От 10 000 ₽ кв<sup>2</sup> м</span>
-              <button>Подробнее</button>
+              <button data-target="2">Подробнее</button>
             </div>
             <div class="main-price-container-inner-card">
               <h3>Ремонт по дизайн проекту</h3>
               <span>От 15 000 ₽ кв<sup>2</sup> м</span>
-              <button>Подробнее</button>
+              <button data-target="3">Подробнее</button>
             </div>
           </div>
         </div>
@@ -438,4 +446,14 @@
       <button>ок</button>
     </aside>
   </body>
+
+  <template>
+    <h2>temp 1</h2>
+  </template>
+  <template>
+    <h2>temp 2</h2>
+  </template>
+  <template>
+    <h2>temp 3</h2>
+  </template>
 </html>

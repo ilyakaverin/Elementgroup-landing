@@ -3,4 +3,7 @@
   color: black  /* var(--color-night); */;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-image: url('../assets/pattern.svg');
+  background-position: cover;
+  background-size: 25%;
 }

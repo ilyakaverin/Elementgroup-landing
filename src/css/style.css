@@ -10,6 +10,7 @@
 @import "./footer.css";
 @import "./calculator.css";
 @import "./ourteam.css";
+@import "./modal.css";
 
 @font-face {
   font-family: "Fira sans";
