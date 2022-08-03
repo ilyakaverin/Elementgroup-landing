@@ -55,7 +55,16 @@
 
 @media(max-width: 768px) {
     .modal {
-
+        margin: 50% 0 0 -195px;
+        width: 100%;
+    }
+    .modal_inner {
+        flex-direction: column;
+    }
+}
+@media(min-width: 769px) and (max-width: 1268px) {
+    .modal {
+        margin: 50% 0 0 -350px;
     }
     .modal_inner {
         flex-direction: column;
