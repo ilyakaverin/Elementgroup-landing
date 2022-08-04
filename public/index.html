@@ -56,6 +56,21 @@
       <div class="modal">
         <button class="modal_close">Закрыть</button>
         <div class="modal_inner"></div>
+        <form id="headerForm" class="phoneForm">
+          <input
+            type="tel"
+            name="phone"
+            id="phoneInput"
+            minlength="11"
+            placeholder="Введите телефон..."
+            pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+            title="Пример: 89185556677"
+            required
+          />
+          <button type="submit" name="submit">
+            Получить консультацию
+          </button>
+        </form>
       </div>
     </div>
     <header>
@@ -233,45 +248,63 @@
       <div class="main-content-gallery-container">
         <div class="main-content-gallery-inner-container">
           <h2>Наши работы</h2>
-          <div class="wrapper">
-            <div class="image">
-                <span>Зал</span>
-                <img src="../src/assets/gal1.webp" alt="" class="slide">
+          <div class="slider-container">
+            <div class="left-slide">
+              <div> 
+                <h1>Nature flower</h1>
+                <p>All in pink</p>
+              </div>
+              <div> 
+                <h1>Warm Sunset</h1>
+                <p>by the beach</p>
+              </div>
+              <div> 
+                <h1>Lonely Castler</h1>
+                <p>in the forest</p>
+              </div>
+              <div> 
+                <h1>Electric Jellyfish</h1>
+                <p>In the ocean</p>
+              </div>
+              <div> 
+                <h1>kekis 1</h1>
+                <p>In the ocean</p>
+              </div>
+              <div> 
+                <h1>kekis 2</h1>
+                <p>In the ocean</p>
+              </div>
             </div>
-            <div class="image">
-                <img src="../src/assets/gal4.webp" alt="" class="slide">
+            <div class="right-slide">
+            <div style="background-image: url('../src/assets/gal1.webp')"></div>
+                <div style="background-image: url('../src/assets/gal2.webp')"></div>
+                <div style="background-image: url('../src/assets/gal3.webp')"></div>
+                <div style="background-image: url('../src/assets/gal4.webp')"></div>
+                <div style="background-image: url('../src/assets/gal5.webp')"></div>
+                <div style="background-image: url('../src/assets/gal6.webp')"></div>
+              
             </div>
-            <div class="image">
-                <img src="../src/assets/gal3.webp" alt="" class="slide">
+            <div class="action-buttons">
+             <button class="down-button">  
+                </button>
+                <button class="up-button">
+                </button>
             </div>
-            <div class="image">
-                <img src="../src/assets/gal5.webp" alt="" class="slide">
-            </div>
-        </div>
-        <div>
-            <button id="left"></button>
-            <button id="right"></button>
-        </div>
           </div>
         </div>
 
       <div class="main-content-start">
         <div class="main-content-start-inner">
-         <h2>Как мы работаем</h2>
-          <ul>
-            <li>
-              <h3>Проект</h3>
-              <span>Изучаем объект и делаем расчет</span>
-            </li>
-            <li>
-              <h3>Договор</h3>
-              <span>Согласовываем</span>
-            </li>
-            <li>
-              <h3>Старт</h3>
-              <span>Реализуем вашу мечту</span>
-            </li>
-          </ul>
+         <h2>Услуги</h2>
+          <div class="main-content-start-service">
+            <h3>Дистанционный ремонт</h3>
+          </div>
+          <div class="main-content-start-service">
+            <h3>Периметральная отделка</h3>
+          </div>
+          <div class="main-content-start-service">
+            <h3>Ремонт санузлов под ключ</h3>
+          </div>
         </div>
       </div>
 

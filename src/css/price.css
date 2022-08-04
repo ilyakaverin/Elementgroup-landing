@@ -40,7 +40,6 @@
 }
 .main-price-container-inner-card:last-child button {
     background-color: var(--color-bg-day);
-    color: var(--color-day)
 }
 .main-price-container-inner-card button {
     background-color: #FCCA00;
@@ -48,6 +47,10 @@
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    color: var(--color-day)
+}
+.main-price-container-inner-card button:hover {
+    opacity: 0.8;
 }
 .main-price-container-inner-card span {
     text-align: center;
