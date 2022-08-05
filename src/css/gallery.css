@@ -17,7 +17,7 @@
 
 .left-slide {
   height: 100%;
-  width: 35%;
+  width: 30%;
   position: absolute;
   top: 0;
   left: 0;
@@ -46,8 +46,8 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 35%;
-  width: 65%;
+  left: 30%;
+  width: 85%;
   transition: transform .5s ease-in-out;
 }
 
@@ -75,7 +75,7 @@ button:hover {
 
 .slider-container .action-buttons button {
   position: absolute;
-  left: 35%;
+  left: 25%;
   top: 50%;
   z-index: 100;
 }

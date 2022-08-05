@@ -1,4 +1,197 @@
 .main-content-start-inner {
     max-width: 1200px;
     margin: 0 auto;
+   
+}
+.main-content-start-service {
+
+    flex-basis: 33.3%;
+    background-color:  var(--color-bg-day);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem;
+}
+.main-content-start-service button {
+    padding: 10px;
+    color: var(--color-day);
+    border: 2px solid var(--color-day);
+    border-radius: 5px;
+}
+.main-content-start-service:hover {
+    background-color: var(--color-orange);
+}
+.main-content-start-services {
+    display: flex;
+    background-color: var(--color-day);
+    background-image: url('../assets/pattern.svg');
+    background-size: 50%;
+    border-radius: 15px;
+    flex-direction: column;
+}
+.main-content-start-service-desc {
+    display: none;
+    background-color: var(--color-bg-day);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.close-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: url('../assets/cross.svg') no-repeat center;
+    align-self: flex-end;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    animation: fade-heading 0.5s ease-out;
+}
+.hide {
+    display:none; 
+}
+.distant-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+.distant-container .distant:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.distant {
+    display: flex;
+    background-color: var(--color-day);
+    color: var(--color-bg-day);
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.distant ul, .perimeter ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.distant ul li, .perimeter ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.distant ul li::before, .perimeter ul li::before{
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -35px;
+    background: url('../assets/checked-svgrepo-com.svg');
+}
+.distant img {
+    max-width: 200px
+}
+.distant-benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.distant-benefits li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.distant-benefits ::before {
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -35px;
+    background-image: url('../assets/arrow-right.svg') ;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.perimeter {
+    background-color: var(--color-day);
+    color: var(--color-bg-day);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.perimeter ul li {
+    font-size: 1rem;
+}
+.grid-container {
+    display: grid;
+    border-radius: 10px;
+    padding: 1rem;
+    grid-template-columns: repeat(5, 0.5fr);
+    grid-gap: 1rem;
+}
+.grid-container .h {
+    grid-row: 3;
+}
+.grid-container .description {
+    grid-column: 4 / 6;
+    grid-row: 2 / 4 ;
+    border: 2px solid var(--color-day);
+    border-radius: 10px;
+    padding: 1rem;
+    display: none;
+}
+.grid-container .i {
+    grid-row: 3;
+    grid-column: 2;
+}
+.grid-container .j {
+    grid-row: 3;
+    grid-column: 3;
+}
+.grid-container div {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    flex-basis: 20%;
+
+}
+.grid-container div span {
+    position: absolute;
+    font-size: 0.7rem;
+    top: 5%;
+    left: 5%;
+    background-color: var(--color-night-transparent);
+    padding: 5px;
+    border-radius: 5px;
+}
+.grid-container div span:nth-child(2) {
+    top:25%;
+    left: 1%;
+    opacity: 0;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+.grid-container div:hover span:nth-child(2) {
+    opacity: 1;
+}
+.grid-container div img {
+    max-width:100%;
+    max-height:100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media(max-width: 768px) {
+    .distant {
+        flex-direction: column;
+    }
+    .distant img {
+        max-width: 100px;
+    }
+    .grid-container  {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container div img {
+       max-height: 100%;
+    }
 }

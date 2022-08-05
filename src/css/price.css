@@ -11,6 +11,10 @@
     padding: 10px;
     margin-bottom: 1rem
 }
+.main-price-container-inner p:last-child {
+    max-width: 87.5%;
+    margin: 0 auto;
+}
 .main-price-container-inner h2 {
     text-align: center;
 }
