@@ -31,6 +31,7 @@
     transition: all 0.5s ease-in-out;
     border-radius: 15px;
     border: 3px solid black;
+    gap: 5vw
 
   }
   .modal form {
@@ -41,6 +42,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .modal_inner img {
+      max-width: 100%;
+      border-radius: 15px;
   }
   
   .modal__root.open .modal {
