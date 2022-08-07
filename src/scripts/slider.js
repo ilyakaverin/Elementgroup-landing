@@ -13,6 +13,7 @@ export default () => {
          const image = picture.querySelector('img');
          const url = image.src;
          const img = document.createElement('img');
+         img.setAttribute('loading', 'lazy')
          img.src = url;
          modalInner.innerHTML = null
          modalInner.append(img);
