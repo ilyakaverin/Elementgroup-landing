@@ -105,8 +105,9 @@
     border: 2px solid var(--color-day);
     padding: 5px;
     border-radius: 5px;
+    color: var(--color-day)
   }
-  .gallery__mobile_next  {}
+
   .main-content-gallery-inner-container .gallery .pic {
     display: none;
   }
