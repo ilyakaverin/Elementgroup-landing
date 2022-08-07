@@ -16,6 +16,7 @@
     color: var(--color-day);
     border: 2px solid var(--color-day);
     border-radius: 5px;
+    cursor: pointer
 }
 .main-content-start-service:hover {
     background-color: var(--color-orange);
@@ -194,5 +195,8 @@
     }
     .grid-container div img {
        max-height: 100%;
+    }
+    .main-content-start-inner h2 {
+        margin: 1rem;
     }
 }

@@ -1,3 +1,5 @@
+import onChange from 'on-change';
+
 export default () => {
  const pictures = document.querySelectorAll('.main-content-gallery-inner-container .gallery .pic');
  const modal = document.querySelector('.modal__root');
@@ -15,12 +17,41 @@ export default () => {
          modalInner.append(img);
          modal.classList.add('open');
      })
- })
+ });
+
+ const state = {
+     current: 0
+ }
+ pictures[state.current].classList.add('showpic');
+ prev.setAttribute('disabled', true)
+
+const observer = onChange(state, (_, value, previous) => {
+    
+    pictures[previous].classList.remove('showpic');
+    pictures[value].classList.add('showpic');
+    if(value === pictures.length - 1) {
+        next.setAttribute('disabled', true)
+    } else {
+        next.removeAttribute('disabled')
+    }
+    if(value === 0) {
+        prev.setAttribute('disabled', true)
+    } else {
+        prev.removeAttribute('disabled')
+    }
+  
+
+})
 
  next.addEventListener('click', () => {
-     for(const pic of pictures) {
-         pic.classList.add('showpic')
-     }
+  
+    observer.current = observer.current += 1
+    
+ })
+ prev.addEventListener('click', () => {
+  
+    observer.current = observer.current -= 1
+    
  })
 
  
