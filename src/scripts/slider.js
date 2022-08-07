@@ -6,6 +6,7 @@ export default () => {
  const modalInner = document.querySelector('.modal_inner');
  const next = document.querySelector('.gallery__mobile_next');
  const prev = document.querySelector('.gallery__mobile_prev');
+ const view = document.querySelector('.main-content-gallery-inner-container')
  
  pictures.forEach(picture => {
      picture.addEventListener('click', () => {
@@ -26,7 +27,7 @@ export default () => {
  prev.setAttribute('disabled', true)
 
 const observer = onChange(state, (_, value, previous) => {
-    
+
     pictures[previous].classList.remove('showpic');
     pictures[value].classList.add('showpic');
     if(value === pictures.length - 1) {
@@ -44,12 +45,12 @@ const observer = onChange(state, (_, value, previous) => {
 })
 
  next.addEventListener('click', () => {
-  
+    view.scrollIntoView();
     observer.current = observer.current += 1
     
  })
  prev.addEventListener('click', () => {
-  
+    view.scrollIntoView();
     observer.current = observer.current -= 1
     
  })

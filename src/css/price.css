@@ -154,6 +154,6 @@
         text-align: center;
     }
     .main-price-container-inner-work img {
-        width: 50%;
+        max-width: 100px;
     }
 }
