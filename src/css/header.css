@@ -108,6 +108,7 @@ header {
   font-size: 3.2rem;
   margin: 1rem;
   line-height: 5rem;
+  color: var(--color-bg-day)
 }
 .phoneForm {
   display: flex;
@@ -215,6 +216,7 @@ header {
   justify-content: space-between;
   width: 100%;
   gap: 5vw;
+  align-self: flex-end;
 }
 @media (min-width: 769px) and (max-width: 1279px) {
   .heading-contact-container {

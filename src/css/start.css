@@ -147,9 +147,21 @@
     grid-row: 3;
     grid-column: 2;
 }
+.grid-container .g {
+    grid-row: 2;
+    grid-column: 1;
+}
 .grid-container .j {
     grid-row: 3;
     grid-column: 3;
+}
+.grid-container .lost {
+    grid-row: 2;
+    grid-column: 3;
+}
+.grid-container .f {
+    grid-row: 2;
+    grid-column: 2;
 }
 .grid-container div {
     position: relative;
