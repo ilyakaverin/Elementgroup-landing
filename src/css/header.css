@@ -208,7 +208,7 @@ header {
   }
 }
 .logo img {
-  max-width: 70%;
+  max-width: 50%;
 }
 .heading-container .menu {
   display: flex;
