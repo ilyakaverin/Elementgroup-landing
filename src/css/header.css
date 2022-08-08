@@ -40,6 +40,8 @@ header {
   margin: 0 auto;
   justify-content: space-between;
   gap: 1vw;
+  flex-direction: column;
+  align-items: center;
 }
 .heading-container p {
   max-width: 80%;
@@ -49,10 +51,10 @@ header {
 .logo {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  max-width: 30%;
+  text-align: center;
 }
-.logo img {
-  max-width: 45%;
+.heading-contact-container .logo img {
+  max-width: 50%;
 }
 .heading-overvideo-content {
   position: absolute;
@@ -60,6 +62,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 100vh;
+
 }
 
 .heading-contact-inner-container {
@@ -69,6 +72,7 @@ header {
   align-items: center;
   max-width: 1200px;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 .heading-contacts {
   display: flex;
@@ -91,17 +95,19 @@ header {
 }
 
 .heading-container-inner {
-  max-width: 60%;
+
   border-radius: 15px;
   margin-bottom: 1rem;
   background-color: var(--color-night-transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heading-container .heading-container-inner h1 {
-  font-size: 5.2rem;
+  font-size: 3.2rem;
   margin: 1rem;
   line-height: 5rem;
-  max-width: 60%;
 }
 .phoneForm {
   display: flex;
@@ -172,6 +178,16 @@ header {
   .heading-contact-container a {
     font-size: 0.74rem;
   }
+  .heading-contact-inner-container {
+    flex-direction: column;
+  }
+  .heading-contact-inner-container form {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  header .menu {
+    flex-direction: column;
+  }
   .header-contacts {
     flex-direction: column;
     align-items: flex-start;
@@ -185,14 +201,20 @@ header {
     padding: 1rem;
     border-radius: 5px;
   }
-  .header-contacts img {
-    width: 10px;
-  }
   .heading-container .heading-container-inner h1 {
     font-size: 3rem;
     line-height: 2.7rem;
     margin: 1rem;
   }
+}
+.logo img {
+  max-width: 70%;
+}
+.heading-container .menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5vw;
 }
 @media (min-width: 769px) and (max-width: 1279px) {
   .heading-contact-container {

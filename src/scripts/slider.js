@@ -46,12 +46,12 @@ const observer = onChange(state, (_, value, previous) => {
 })
 
  next.addEventListener('click', () => {
-    view.scrollIntoView();
+     // view.scrollIntoView();
     observer.current = observer.current += 1
     
  })
  prev.addEventListener('click', () => {
-    view.scrollIntoView();
+     // view.scrollIntoView();
     observer.current = observer.current -= 1
     
  })

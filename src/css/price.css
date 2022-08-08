@@ -17,6 +17,9 @@
     flex-direction: column;
     gap: 2vw;
 }
+.main-price-container a {
+    color: var(--color-orange)
+}
 .main-price-container-inner-description ul li {
     position: relative;
     display: flex;
