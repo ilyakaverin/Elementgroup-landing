@@ -84,7 +84,7 @@ header {
   text-decoration: none;
   margin-right: 1rem;
   display: flex;
-  color: var(--color-bg-day);
+  color: var(--color-day);
 }
 .heading-contacts a:last-child {
   margin-right: 0;
@@ -202,6 +202,7 @@ header {
     opacity: 0;
     padding: 1rem;
     border-radius: 5px;
+
   }
   .heading-container .heading-container-inner h1 {
     font-size: 3rem;
