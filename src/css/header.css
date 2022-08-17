@@ -38,7 +38,7 @@ header {
   margin: 0 auto;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+  place-content: center;
   height: 100%;
 
 }
@@ -53,7 +53,7 @@ header {
   text-align: center;
 }
 .heading-contact-container .logo img {
-  max-width: 50%;
+  max-width: 70%;
 }
 .heading-overvideo-content {
   position: absolute;
@@ -85,6 +85,9 @@ header {
   margin-right: 1rem;
   display: flex;
   color: var(--color-day);
+  background-color: var(--color-night-transparent);
+  padding: 15px;
+  border-radius: 10px;
 }
 .heading-contacts a:last-child {
   margin-right: 0;
@@ -100,6 +103,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
   margin-top: 3rem;
 }
 
@@ -189,6 +193,7 @@ header {
   }
   header .menu {
     flex-direction: column;
+    align-self: flex-end
   }
   .header-contacts {
     flex-direction: column;
