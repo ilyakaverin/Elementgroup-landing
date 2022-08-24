@@ -26,7 +26,6 @@
   --border-width: 4px;
   padding: 1.5rem;
   flex-basis: 20%;
-  cursor: pointer;
   color: var(--color-day);
   background-color: var(--color-bg-day);
   border: 1px solid var(--color-day);

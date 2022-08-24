@@ -13,11 +13,9 @@ const FinalStep = ({ dispatch, action, value }) => {
   }
   return (
     <div className={cn(style.finalStep__Container, "animation-3")}>
-      <h3>Введите номер телефона, мы с вами свяжемся и обсудим ваш проект!</h3>
+      <h3>Введите номер телефона, мы с вами свяжемся и обсудим ваш проект!</h3> 
       <Input
         required={true}
-        minLength="11"
-        maxLength="11"
         type="tel"
         placeholder="Ваш телефон"
         click={dispatch}
